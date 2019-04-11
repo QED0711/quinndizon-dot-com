@@ -1,0 +1,21 @@
+[X] SETUP
+    [X] install and setup react-router
+    [X] setup folder structure
+        [X] components
+            [X] about
+            [X] events
+            [X] listen
+            [X] projects
+            [X] resume
+            [X] contact
+            [X] blog
+        [X] helpers
+        [X] style 
+        [X] content
+            [X] about
+            [X] events
+            [X] listen
+            [X] projects
+            [X] resume
+            [X] contact
+            [X] blog
