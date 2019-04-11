@@ -2,6 +2,7 @@
     [X] install and setup react-router
     [X] setup folder structure
         [X] components
+            [X] navigation
             [X] about
             [X] events
             [X] listen
