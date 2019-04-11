@@ -4,7 +4,7 @@ class ContactContainer extends Component {
     render(){
         return(
             <div className="contact-container">
-
+                CONTACT
             </div>
         )
     }

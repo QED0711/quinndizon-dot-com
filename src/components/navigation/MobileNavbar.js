@@ -6,7 +6,7 @@ class MobileNavbar extends Component {
     render(){
         return(
             <nav className="mobile-navbar">
-                <Link to="/about">About</Link>
+                <Link to="/">About</Link>
                 <Link to="/events">Events</Link>
                 <Link to="/listen">Listen</Link>
                 <Link to="/projects">Projects</Link>

@@ -4,7 +4,7 @@ class BlogContainer extends Component {
     render(){
         return(
             <div className="blog-container">
-
+                BLOG
             </div>
         )
     }

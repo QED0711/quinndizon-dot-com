@@ -4,7 +4,7 @@ class ListenContainer extends Component {
     render(){
         return(
             <div className="listen-container">
-
+                LISTEN
             </div>
         )
     }

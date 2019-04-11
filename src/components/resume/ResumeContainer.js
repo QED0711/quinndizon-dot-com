@@ -4,7 +4,7 @@ class ResumeContainer extends Component {
     render(){
         return(
             <div className="resume-container">
-                
+                RESUME
             </div>
         )
     }

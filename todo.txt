@@ -37,4 +37,4 @@
     [X] ContactContainer
     [X] BlogContainer
 
-[] Setup container components with routes
+[X] Setup container components with routes

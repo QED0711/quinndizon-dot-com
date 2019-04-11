@@ -6,7 +6,7 @@ class DesktopNavbar extends Component {
     render(){
         return(
             <nav className="desktop-navbar">
-                <Link to="/about">About</Link>
+                <Link to="/">About</Link>
                 <Link to="/events">Events</Link>
                 <Link to="/listen">Listen</Link>
                 <Link to="/projects">Projects</Link>
