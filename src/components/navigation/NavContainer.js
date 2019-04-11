@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import DesktopNavbar from './DesktopNavbar';
+import MobileNavbar from './MobileNavbar';
 
 class NavContainer extends Component {
 
@@ -8,7 +9,7 @@ class NavContainer extends Component {
         return(
             <div className="nav-container">
                 <DesktopNavbar />
-                {/* <MobileNavbar /> */}
+                <MobileNavbar />
             </div>
         )
     }
