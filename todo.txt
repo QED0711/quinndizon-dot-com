@@ -20,3 +20,21 @@
             [X] resume
             [X] contact
             [X] blog
+
+
+===============================================================================
+[X] Navbar setup
+    [X] create desktop navbar
+    [X] create mobile navbar
+
+===============================================================================
+[X] Content Container setup 
+    [X] AboutContainer
+    [X] EventsContainer
+    [X] ListenContainer
+    [X] ProjectsContainer
+    [X] ResumeContainer
+    [X] ContactContainer
+    [X] BlogContainer
+
+[] Setup container components with routes
