@@ -1,4 +1,13 @@
-[X] added .gitchecklist file
+[X] add style checklist
 
-[] Made container for route content
-    [] placed routes inside main content container
+    [X] style main app title
+    [X] style file drop div
+    [X] style project selection
+    [X] style project banner
+    [X] style auto push form
+    [X] style checklist
+
+
+[X] add description and instructions
+
+[X] add reload button
