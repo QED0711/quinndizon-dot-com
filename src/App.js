@@ -22,13 +22,16 @@ class App extends Component {
         <div className="App">
           <NavContainer />
         
-          <Route path="/" exact component={AboutContainer} />
-          <Route path="/events" exact component={EventsContainer} />
-          <Route path="/listen" exact component={ListenContainer} />
-          <Route path="/projects" exact component={ProjectsContainer} />
-          <Route path="/resume" exact component={ResumeContainer} />
-          <Route path="/contact" exact component={ContactContainer} />
-          <Route path="/blog" exact component={BlogContainer} />
+          <div className="content-container">
+            <Route path="/" exact component={AboutContainer} />
+            <Route path="/events" exact component={EventsContainer} />
+            <Route path="/listen" exact component={ListenContainer} />
+            <Route path="/projects" exact component={ProjectsContainer} />
+            <Route path="/resume" exact component={ResumeContainer} />
+            <Route path="/contact" exact component={ContactContainer} />
+            <Route path="/blog" exact component={BlogContainer} />
+          </div>
+
 
         </div>
       </BrowserRouter>
