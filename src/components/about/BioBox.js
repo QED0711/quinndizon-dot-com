@@ -25,13 +25,7 @@ class BioBox extends Component {
         const { content } = this.props
         return(
             <div className="bio-box">
-                {
-                    this.state.fullBio ?
-                    renderTags(content.fullBio)
-                    :
-                    renderTags(content.shortBio)
-                }
-        
+                {this.state.fullBio ? renderTags(content.fullBio) : renderTags(content.shortBio)}
                 <a id="toggle-full-bio" href="#" onClick={this.toggleFullBio}>Full Bio</a>
             </div>
         )
