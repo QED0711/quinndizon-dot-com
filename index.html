@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="./main.css">
+
+    <title>Git Checklist</title>
+</head>
+<body>
+    
+
+    <header>
+        <h1><em>Git Checklist</em></h1>
+        <p>
+            <em>
+                An app to help you plan and manage your git workflow by creating and checking off small, managable tasks. 
+            </em>
+        </p>
+        <p>
+            <em>
+                Simply drag and drop any git initialized directory below. 
+                If it doesn't already have a <strong>.gitchecklist</strong> file, you will be prompted to add one.
+                You can then add your tasks to the .gitchecklist file in the format - '[ ] task name';
+                When that file is loaded into this application, you can check off each task as you complete them.
+                As you complete tasks,and check them off, your changes will be automatically committed.
+                You can optionally have your commits pushed to your branch of choice.   
+            </em>
+        </p>
+    </header>
+
+    <form class="directory-form">
+        <div id="file-drop">
+            <p>Drop your git initialized projects here</p>
+        </div>
+
+        <select id="project-list">
+
+        </select>
+    </form>
+
+    <form id="reload">
+        <input type="submit" value="Reload" >
+    </form>
+
+    <div id="project-banner">
+        <!-- current project path -->
+        <h4></h4>
+    </div>
+
+    <form id="auto-push" class="section-form">
+
+        <input type="checkbox" id="push" >
+        <label for="push">Auto push commits</label> 
+        |
+        <label for="branch">Branch: </label>
+        <input type="text" id="branch" value="master">
+        
+    </form>
+
+    <div id="checklist">
+        
+    </div>
+
+
+
+    <script>
+        require('./render.js')
+    </script>
+
+
+
+</body>
+</html>
