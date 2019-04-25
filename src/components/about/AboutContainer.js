@@ -4,26 +4,11 @@ import { renderTags, TitleBox } from '../elements/stateless';
 // CONTENT
 import ABOUT_CONTENT from '../../content/about';
 
+// COMPONENTS
+
+import BioBox from './BioBox';
+
 class AboutContainer extends Component {
-    
-    constructor(props){
-        super(props);
-
-        this.state = {
-            fullBio: false
-        }
-
-        this.toggleFullBio = this.toggleFullBio.bind(this);
-    }
-
-    toggleFullBio(){
-        const toggleLink = document.getElementById("toggle-full-bio")
-        const fullBio = !this.state.fullBio;
-
-        toggleLink.innerText = fullBio ? "Short Bio" : "Full Bio"; 
-
-        this.setState({fullBio});
-    }
 
     render(){
 
@@ -31,15 +16,10 @@ class AboutContainer extends Component {
             <div className="about-container">
                 
                 <TitleBox title={ABOUT_CONTENT.title} />
+                
+                <BioBox content={ABOUT_CONTENT} />
 
-                {
-                    this.state.fullBio ?
-                    renderTags(ABOUT_CONTENT.fullBio)
-                    :
-                    renderTags(ABOUT_CONTENT.shortBio)
-                }
-
-                <a id="toggle-full-bio" href="#" onClick={this.toggleFullBio}>Full Bio</a>
+                
 
             </div>
         )
