@@ -1,13 +1,7 @@
-[X] add style checklist
+[X] added .gitchecklist file
 
-    [X] style main app title
-    [X] style file drop div
-    [X] style project selection
-    [X] style project banner
-    [X] style auto push form
-    [X] style checklist
+[X] Made container for route content
 
 
-[X] add description and instructions
-
-[X] add reload button
+[X] Added TitleBox component
+[X] Added renderTags helper function
