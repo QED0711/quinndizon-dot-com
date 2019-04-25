@@ -9,6 +9,11 @@ const BLOG_CONTENT = {
             "Test Post 1",
             new Date().toString(),
             "This is the test summary"
+        ),
+        postInfoBox(
+            "This is another cool post",
+            new Date().toString(),
+            "a new summary here about stuff"
         )
     ]
 }
