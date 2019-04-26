@@ -10,7 +10,7 @@ const ProjectInfo = ({project}) => {
 
     return(
         <div className="project-info">
-        
+
             <h3 className="project-title">{project.title}</h3>
             
             <div className="project-icons">
