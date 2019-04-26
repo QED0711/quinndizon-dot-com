@@ -11,7 +11,7 @@ import ProjectBoxes from './ProjectBoxes';
 class ProjectsContainer extends Component {
     render(){
         return(
-            <div className="projects-container">
+            <div className="projects-container content-container">
                 <TitleBox title={PROJECTS_CONTENT.title} />
 
                 <ProjectBoxes projects={PROJECTS_CONTENT.projects} />

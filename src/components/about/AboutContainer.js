@@ -13,7 +13,7 @@ class AboutContainer extends Component {
     render(){
 
         return(
-            <div className="about-container">
+            <div className="about-container content-container">
                 
                 <TitleBox title={ABOUT_CONTENT.title} />
                 

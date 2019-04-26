@@ -10,7 +10,7 @@ import BlogPosts from './BlogPosts';
 class BlogContainer extends Component {
     render(){
         return(
-            <div className="blog-container">
+            <div className="blog-container content-container">
                 <TitleBox title={BLOG_CONTENT.title} />
 
                 <BlogPosts posts={BLOG_CONTENT.posts} />
