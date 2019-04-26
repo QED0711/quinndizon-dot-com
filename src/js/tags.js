@@ -16,8 +16,20 @@ const postInfoBox = (title, date, summary) => {
     }
 }
 
+const projectInfoBox = (title, features, githubLink, websiteLink, desktopImage, mobileImage, demoVideo) => {
+    return {
+        title,
+        features,
+        githubLink,
+        websiteLink,
+        desktopImage,
+        mobileImage
+    }
+}
+
 
 export {
     paragraph,
-    postInfoBox
+    postInfoBox,
+    projectInfoBox
 }
