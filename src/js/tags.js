@@ -50,11 +50,21 @@ const projectInfoBox = (title, features, githubLink = null, websiteLink = null, 
     }
 }
 
+const eventInfoBox = (title, date, location, summary, image) => {
+    return {
+        title, 
+        date,
+        location,
+        summary,
+        image
+    }
+}
 
 
 export {
     paragraph,
     postInfoBox,
     listenInfoBox,
-    projectInfoBox
+    projectInfoBox,
+    eventInfoBox
 }
