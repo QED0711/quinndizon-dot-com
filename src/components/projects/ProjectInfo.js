@@ -9,7 +9,7 @@ const ProjectInfo = ({project}) => {
     }
 
     return(
-        <div className="project-info">
+        <div className="project-info content-card">
 
             <h3 className="project-title">{project.title}</h3>
             

@@ -11,9 +11,11 @@ const ListenInfoBox = ({ work, setCurrentWork }) => {
 
     return(
 
-        <Link to={`/listen/${parseTitle(work.title)}`} className="listen-info-box">
-            <h3>{work.title}</h3>
-            <h5>{work.subtitle}</h5>
+        <Link to={`/listen/${parseTitle(work.title)}`}>
+            <div className="listen-info-box content-card">
+                <h3>{work.title}</h3>
+                <h5>{work.subtitle}</h5>
+            </div>
         </Link>
 
 

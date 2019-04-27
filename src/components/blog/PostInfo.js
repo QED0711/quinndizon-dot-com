@@ -14,7 +14,7 @@ const PostInfo = ({post}) => {
 
     return(
         <Link to={`/blog/${parseTitle(post.title)}`}>
-            <div className="post-info">
+            <div className="post-info content-card">
                 <h3 className="post-title">{post.title}</h3>
                 <h5 className="post-date">{post.date}</h5>
                 <hr/>

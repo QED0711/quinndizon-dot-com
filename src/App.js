@@ -12,8 +12,10 @@ import ProjectsContainer from './components/projects/ProjectsContainer';
 import ResumeContainer from './components/resume/ResumeContainer';
 import BlogContainer from './components/blog/BlogContainer';
 import ContactContainer from './components/contact/ContactContainer';
+
 // CSS
 import './App.css';
+import './css/content-card.css'
 
 class App extends Component {
   render() {

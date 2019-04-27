@@ -1,0 +1,22 @@
+
+.content-card{
+    box-shadow: 4px 4px 10px grey;
+}
+
+.content-card:hover{    
+    transform: scale(1.05);
+    animation-name: zoom;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom{
+    from{
+        transform: scale(1);
+        box-shadow: 4px 4px 10px grey;
+    }
+    to{
+        transform: scale(1.01);
+        box-shadow: 10px 10px 20px grey;
+    }
+}
