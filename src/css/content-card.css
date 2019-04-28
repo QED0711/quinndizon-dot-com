@@ -6,7 +6,7 @@
 .content-card:hover{    
     transform: scale(1.05);
     animation-name: zoom;
-    animation-duration: 0.25s;
+    animation-duration: 0.15s;
     animation-fill-mode: forwards;
 }
 

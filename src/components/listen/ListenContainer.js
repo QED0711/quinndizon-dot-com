@@ -9,6 +9,8 @@ import ListenBoxes from './ListenBoxes';
 
 class ListenContainer extends Component {
     render(){
+        const { match } = this.props
+        console.log(match)
         return(
             <div className="listen-container content-container">
                 <TitleBox title={LISTEN_CONTENT.title} />

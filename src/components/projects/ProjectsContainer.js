@@ -10,6 +10,7 @@ import ProjectBoxes from './ProjectBoxes';
 
 class ProjectsContainer extends Component {
     render(){
+        const { match } = this.props
         return(
             <div className="projects-container content-container">
                 <TitleBox title={PROJECTS_CONTENT.title} />
