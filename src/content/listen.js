@@ -1,7 +1,9 @@
 import React from 'react';
 
-
+// COMPONENTS
 import { listenInfoBox } from '../js/tags'
+
+
 
 const LISTEN_CONTENT = {
 

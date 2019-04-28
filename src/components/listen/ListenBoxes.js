@@ -2,11 +2,11 @@ import React from 'react';
 
 import ListenInfoBox from './ListenInfoBox';
 
-const ListenBoxes = ({works}) => {
+const ListenBoxes = ({works, setCurrentWork}) => {
 
     const renderListenBoxes = (works) => {
         return works.map((work, i) => {
-            return <ListenInfoBox key={i} work={work} />
+            return <ListenInfoBox key={i} work={work} setCurrentWork={setCurrentWork}/>
         })
     }   
 
