@@ -19,7 +19,7 @@ const ListenContainer = ({ match }) => {
     } else {
         currentWork = LISTEN_CONTENT.works.filter(work => work.title.toLowerCase() === reformatTitle(match.params.work))[0]
     }
-    console.log(currentWork);
+    
     return(
         <div className="listen-container content-container">
             <TitleBox title={LISTEN_CONTENT.title} />

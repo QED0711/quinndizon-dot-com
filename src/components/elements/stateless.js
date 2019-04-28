@@ -18,10 +18,21 @@ const TitleBox = ({title}) => {
     )
 }
 
+const ResumeButton = ({ text, setResumeItem }) => {
+    const handleClick = () => {
+        return setResumeItem(text)
+    }
+    return(
+        <button className="resume-button" onClick={handleClick}>
+            <h3>{text}</h3>
+        </button>
+    )
+}
 
 
 
 export {
+    renderTags,
     TitleBox,
-    renderTags
+    ResumeButton
 }
