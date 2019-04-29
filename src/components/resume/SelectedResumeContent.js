@@ -1,14 +1,15 @@
 import React from 'react';
 
+import renderContent from '../../js/renderConent';
 
-const SelectedResumeContent = ({ resumeItem, resumeContent }) => {
+const SelectedResumeContent = ({ content }) => {
 
-    // const content = 
-
+    
+    console.log(content)
     return(
         <div className="selected-resume-content">
 
-            
+            {content && renderContent(content)}
 
         </div>
     )

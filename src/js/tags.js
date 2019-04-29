@@ -1,4 +1,5 @@
 import React from 'react';
+import { maxHeaderSize } from 'http';
 
 const paragraph = (content) => {
     return {
@@ -10,6 +11,28 @@ const paragraph = (content) => {
 const unorderedList = (content) => {
     return {
         type: "ul",
+        content
+    }
+}
+
+const orderedList = (content) => {
+    return {
+        type: "ol",
+        content
+    }
+}
+
+const image = (content, alt) => {
+    return {
+        type: "image",
+        content,
+        alt
+    }
+}
+
+const heading = (size, content) => {
+    return {
+        type: `h${size}`,
         content
     }
 }
@@ -67,19 +90,16 @@ const eventInfoBox = (title, date, location, summary, image) => {
     }
 }
 
-const resumeItem = (name, itemList) => {
-    return {
-        name,
-        itemList
-    }
-}
-
 
 export {
     paragraph,
+    unorderedList,
+    orderedList,
+    image,
+    heading,
+
     postInfoBox,
     listenInfoBox,
     projectInfoBox,
     eventInfoBox,
-    resumeItem
 }

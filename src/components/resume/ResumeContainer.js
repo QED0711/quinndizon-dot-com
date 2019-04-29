@@ -14,7 +14,7 @@ const ResumeContainer = () => {
     let [resumeItem, setResumeItem] = useState('Experience');
     let [resumeVersion, setResumeVersion] = useState('programming')
     console.log(resumeItem);
-
+    let content = RESUME_CONTENT.items[resumeItem.toLowerCase()]
     return(
         <div className="resume-container">
             
@@ -24,7 +24,7 @@ const ResumeContainer = () => {
             <a href="#">View as PDF</a>
 
             <ResumeButtonGroup setResumeItem={setResumeItem} />
-            <SelectedResumeContent resumeItem={resumeItem} resumeContent={RESUME_CONTENT.items} />
+            <SelectedResumeContent content={content} />
 
         </div>
     )
