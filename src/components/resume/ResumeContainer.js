@@ -10,11 +10,13 @@ import PDFLink from './PDFLink';
 import SelectedResumeContent from './SelectedResumeContent';
 
 const ResumeContainer = () => {
+    let names = RESUME_CONTENT.items.map(item => item.name)
     
-    let [resumeItem, setResumeItem] = useState('Experience');
+    let [resumeItem, setResumeItem] = useState(names[0]);
     let [resumeVersion, setResumeVersion] = useState('programming')
-    console.log(resumeItem);
-    let content = RESUME_CONTENT.items.filter(item => item.name === resumeItem.toLowerCase())[0]
+
+    let content = RESUME_CONTENT.items.filter(item => item.name === resumeItem)[0]
+    
     return(
         <div className="resume-container">
             
@@ -23,7 +25,7 @@ const ResumeContainer = () => {
 
             <a href="#">View as PDF</a>
 
-            <ResumeButtonGroup setResumeItem={setResumeItem} />
+            <ResumeButtonGroup names={names} setResumeItem={setResumeItem} />
             <SelectedResumeContent content={content} />
 
         </div>
