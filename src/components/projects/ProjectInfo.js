@@ -12,29 +12,30 @@ const ProjectInfo = ({project}) => {
     }
 
 
-    return(        
-        <Link to={`/projects/${parseTitle(project.title)}`} >
-            <div className="project-info content-card">
+    return(      
+        
+        <div className="project-info content-card">
+            <Link to={`/projects/${parseTitle(project.title)}`} >
 
-                <h3 className="project-title">{project.title}</h3>
-                
-                <div className="project-icons">
-                    {/* {project.desktopImage && <DesktopIcon />} */}
-                    {/* {project.desktopImage && <MobileIcon />} */}
-                </div>
-                
-                <div className="project-features">
-                    <ul>
-                        {renderFeatures(project.features)}
-                    </ul>
-                </div>
+                    <h3 className="project-title">{project.title}</h3>
+                    
+                    <div className="project-icons">
+                        {/* {project.desktopImage && <DesktopIcon />} */}
+                        {/* {project.desktopImage && <MobileIcon />} */}
+                    </div>
+                    
+                    <div className="project-features">
+                        <ul>
+                            {renderFeatures(project.features)}
+                        </ul>
+                    </div>
 
-                <div className="project-links">
-                    {project.githubLink && <a href={project.githubLink} target="_blank">Github Repository</a> }
-                    {project.websiteLink && <a href={project.websiteLink} target="_blank">Website</a> }
-                </div>
+            </Link>
+            <div className="project-links">
+                {project.githubLink && <a href={project.githubLink} target="_blank">Github Repository</a> }
+                {project.websiteLink && <a href={project.websiteLink} target="_blank">Website</a> }
             </div>
-        </Link>
+        </div>
     )
 
 }
