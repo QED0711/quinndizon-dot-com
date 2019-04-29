@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { renderTags, TitleBox } from '../elements/stateless';
+import { TitleBox } from '../elements/stateless';
+import renderContent from '../../js/renderConent';
 
 class BioBox extends Component {
     constructor(props){
@@ -25,7 +26,7 @@ class BioBox extends Component {
         const { content } = this.props
         return(
             <div className="bio-box">
-                {this.state.fullBio ? renderTags(content.fullBio) : renderTags(content.shortBio)}
+                {this.state.fullBio ? renderContent(content.fullBio) : renderContent(content.shortBio)}
                 <a id="toggle-full-bio" href="#" onClick={this.toggleFullBio}>Full Bio</a>
             </div>
         )

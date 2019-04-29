@@ -1,13 +1,6 @@
 import React from 'react';
 
-const renderTags = ({tags}) => {
-    return tags.map((tag, i) => {
-        switch(tag.type){
-            case("p"):
-                return <p className="content-paragraph" key={i}>{tag.content}</p>
-        }
-    })
-}
+
 
 
 const TitleBox = ({title}) => {
@@ -32,7 +25,6 @@ const ResumeButton = ({ text, setResumeItem }) => {
 
 
 export {
-    renderTags,
     TitleBox,
     ResumeButton
 }
