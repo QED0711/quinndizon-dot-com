@@ -12,23 +12,17 @@ import {
 const RESUME_CONTENT = {
     title: "Resume",
 
-    items: {
-        skills : {
-            tags: [
-                heading(3, "Skills"),
-                paragraph("Here is a skills introduction"),
-                heading(5, "first skill"),
-                unorderedList(["item 1", "item 2"])
-            ]
-        } 
-    } 
+    items: [
+        resumeItem(
+            "skills",
+            heading(3, "Skills"),
+            paragraph("Here is a skills introduction"),
+            heading(5, "first skill"),
+            unorderedList(["item 1", "item 2"])
+        )
         
-        
-        
-            
-        
-        
-    
+    ]
+
 }
 
 export default RESUME_CONTENT;

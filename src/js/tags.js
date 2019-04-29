@@ -90,6 +90,13 @@ const eventInfoBox = (title, date, location, summary, image) => {
     }
 }
 
+const resumeItem = (name, ...tags) => {
+    return {
+        name,
+        tags
+    }
+} 
+
 
 export {
     paragraph,
@@ -102,4 +109,5 @@ export {
     listenInfoBox,
     projectInfoBox,
     eventInfoBox,
+    resumeItem
 }

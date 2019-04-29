@@ -14,7 +14,7 @@ const ResumeContainer = () => {
     let [resumeItem, setResumeItem] = useState('Experience');
     let [resumeVersion, setResumeVersion] = useState('programming')
     console.log(resumeItem);
-    let content = RESUME_CONTENT.items[resumeItem.toLowerCase()]
+    let content = RESUME_CONTENT.items.filter(item => item.name === resumeItem.toLowerCase())[0]
     return(
         <div className="resume-container">
             
