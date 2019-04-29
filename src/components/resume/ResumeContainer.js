@@ -7,11 +7,11 @@ import RESUME_CONTENT from '../../content/resume';
 import { TitleBox, ResumeButton } from '../elements/stateless';
 import ResumeButtonGroup from './ResumeButtonGroup'
 import PDFLink from './PDFLink';
-
+import SelectedResumeContent from './SelectedResumeContent';
 
 const ResumeContainer = () => {
     
-    let [resumeItem, setResumeItem] = useState(null);
+    let [resumeItem, setResumeItem] = useState('Experience');
     let [resumeVersion, setResumeVersion] = useState('programming')
     console.log(resumeItem);
 
@@ -24,7 +24,7 @@ const ResumeContainer = () => {
             <a href="#">View as PDF</a>
 
             <ResumeButtonGroup setResumeItem={setResumeItem} />
-
+            <SelectedResumeContent resumeItem={resumeItem} resumeContent={RESUME_CONTENT.items} />
 
         </div>
     )

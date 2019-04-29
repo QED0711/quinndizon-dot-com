@@ -7,6 +7,13 @@ const paragraph = (content) => {
     }
 }
 
+const unorderedList = (content) => {
+    return {
+        type: "ul",
+        content
+    }
+}
+
 const postInfoBox = (title, date, summary) => {
     return {
         type: "post-info",
@@ -60,11 +67,19 @@ const eventInfoBox = (title, date, location, summary, image) => {
     }
 }
 
+const resumeItem = (name, itemList) => {
+    return {
+        name,
+        itemList
+    }
+}
+
 
 export {
     paragraph,
     postInfoBox,
     listenInfoBox,
     projectInfoBox,
-    eventInfoBox
+    eventInfoBox,
+    resumeItem
 }
