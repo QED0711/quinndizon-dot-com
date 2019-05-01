@@ -8,14 +8,14 @@ const paragraph = (content) => {
     }
 }
 
-const unorderedList = (content) => {
+const unorderedList = (...content) => {
     return {
         type: "ul",
         content
     }
 }
 
-const orderedList = (content) => {
+const orderedList = (...content) => {
     return {
         type: "ol",
         content

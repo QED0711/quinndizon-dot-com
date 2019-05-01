@@ -16,8 +16,9 @@ const BLOG_CONTENT = {
             "Test Post 1",
             new Date().toString(),
             "This is the test summary",
+            heading(3, "Test Post 1"),
             paragraph("This is a sample paragraph"),
-            orderedList(["Here are the topics I will cover"]),
+            orderedList("Here are the topics I will cover"),
         ),
         postBox(
             "This is another cool post",
