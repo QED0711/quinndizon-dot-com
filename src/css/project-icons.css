@@ -16,29 +16,14 @@
 }
 
 .image-screen{
-	width: calc(100% - 10px);
-	height: calc(100% - 5px);
+	width: calc(100% - 2px);
+	height: calc(100% - 2px);
 	margin: 0 auto;
-	background-color: white;
-	border-radius: 2px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 2px;
 }
 
-.desktop-bass-stand{
-	height: 2em;
-	width: 1em;
-	background-color: #616161;
-	margin: 0 auto;
-}
-
-.desktop-bass{
-	width: 6em;
-	height: 0.5em;
-	background-color: #616161;
-	margin: 0 auto;
-	
-	border-top-left-radius: 30px;
-	border-top-right-radius: 30px;
-}
 
 .laptop-screen-frame{
 	height: 7em;
@@ -47,13 +32,6 @@
 	background-color: #616161;
 	padding: .5em .4em;
 	border-radius: 8px
-}
-
-.image-screen{
-	height: 100%;
-	width: 100%;
-	background-color: white;
-	border-radius: 2px;
 }
 
 .laptop-bass{

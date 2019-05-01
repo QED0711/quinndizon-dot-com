@@ -1,11 +1,17 @@
 import React from 'react';
 
-import { LaptopIcon, MobileIcon,  TabletIcon} from './projectIcons'
+import { LaptopIcon, MobileIcon, TabletIcon } from './projectIcons'
 
-const ProjectCardContainer = ({  }) => {
+const ProjectCardContainer = ({ currentProject }) => {
+    
+    const { laptopImage, tabletImage, mobileImage } = currentProject
+
     return(
         <div className="project-card-container">
-            <LaptopIcon />
+            
+            {laptopImage && <LaptopIcon image={laptopImage} />}
+            {tabletImage && <TabletIcon image={tabletImage} />}
+            {mobileImage && <MobileIcon image={mobileImage} />}
         </div>
     )
 }

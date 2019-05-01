@@ -28,7 +28,7 @@ const ProjectsContainer = ({ match }) => {
             {
                 currentProject
                 &&
-                <ProjectCardContainer />
+                <ProjectCardContainer currentProject={currentProject}/>
             }
         </div>
     )

@@ -2,10 +2,11 @@
 import React from 'react';
 
 const LaptopIcon = ({ image }) => {
+    console.log(image)
     return(
         <div className="icon-container">
             <div className="laptop-screen-frame">
-		        <div className="image-screen"></div>
+		        <div className="image-screen" style={{backgroundImage: `url("${image}")`}}></div>
 	        </div>
 	        <div className="laptop-bass">		
 	        </div>

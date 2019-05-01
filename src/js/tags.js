@@ -68,13 +68,14 @@ const scoreFrame = (src) => {
     )
 }
 
-const projectInfoBox = (title, features, githubLink = null, websiteLink = null, desktopImage = null , mobileImage = null , demoVideo = null) => {
+const projectInfoBox = (title, features, githubLink = null, websiteLink = null, laptopImage = null, tabletImage = null, mobileImage = null, demoVideo = null) => {
     return {
         title,
         features,
         githubLink,
         websiteLink,
-        desktopImage,
+        laptopImage,
+        tabletImage,
         mobileImage,
         demoVideo
     }
