@@ -12,11 +12,12 @@ import ProjectsContainer from './components/projects/ProjectsContainer';
 import ResumeContainer from './components/resume/ResumeContainer';
 import BlogContainer from './components/blog/BlogContainer';
 import ContactContainer from './components/contact/ContactContainer';
+import BlogPostContainer from './components/blog/BlogPostContainer';
 
 // CSS
 import './App.css';
-import './css/content-card.css'
-import BlogPostContainer from './components/blog/BlogPostContainer';
+import './css/content-card.css';
+import './css/project-icons.css';
 
 class App extends Component {
   render() {

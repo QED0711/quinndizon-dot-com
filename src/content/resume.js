@@ -18,14 +18,14 @@ const RESUME_CONTENT = {
             heading(3, "Experience"),
             paragraph("a paragraph about my exerience"),
             heading(5, "a smaller heading"),
-            unorderedList(["thing 1", "thing 2"])
+            unorderedList("thing 1", "thing 2")
         ),
         resumeItem(
             "Skills",
             heading(3, "Skills"),
             paragraph("Here is a skills introduction"),
             heading(5, "first skill"),
-            unorderedList(["item 1", "item 2"])
+            orderedList("item 1", "item 2")
         ),
     ]
 

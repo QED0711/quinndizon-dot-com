@@ -1,24 +1,38 @@
-import React, { Component } from 'react';
+import React, {useState} from 'react';
 import { TitleBox } from '../elements/stateless';
+import { reformatTitle } from '../../js/helpers';
 
 // CONTENT
 import PROJECTS_CONTENT from '../../content/projects';
 
 // COMPONENTS
 import ProjectBoxes from './ProjectBoxes';
+import ProjectCardContainer from './ProjectCardContainer';
 
 
-class ProjectsContainer extends Component {
-    render(){
-        const { match } = this.props
-        return(
-            <div className="projects-container content-container">
-                <TitleBox title={PROJECTS_CONTENT.title} />
+const ProjectsContainer = ({ match }) => {
+    const { projects } = PROJECTS_CONTENT;
 
-                <ProjectBoxes projects={PROJECTS_CONTENT.projects} />
-            </div>
-        )
+    let [currentProject, setCurrentProject] = useState(null);
+
+    if(match.params.project && !currentProject){
+        currentProject = projects.filter(project => reformatTitle(match.params.project) === project.title.toLowerCase())[0];
     }
+
+    console.log(currentProject)
+    return(
+        <div className="projects-container content-container">
+            <TitleBox title={PROJECTS_CONTENT.title} />
+
+            <ProjectBoxes projects={projects} />
+            {
+                currentProject
+                &&
+                <ProjectCardContainer />
+            }
+        </div>
+    )
+    
 }
 
 export default ProjectsContainer;
