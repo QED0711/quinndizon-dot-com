@@ -16,6 +16,7 @@ import ContactContainer from './components/contact/ContactContainer';
 // CSS
 import './App.css';
 import './css/content-card.css'
+import BlogPostContainer from './components/blog/BlogPostContainer';
 
 class App extends Component {
   render() {
@@ -37,7 +38,9 @@ class App extends Component {
           
           <Route path="/resume" component={ResumeContainer} />
           <Route path="/contact" component={ContactContainer} />
-          <Route path="/blog" component={BlogContainer} />
+          
+          <Route path="/blog" exact component={BlogContainer} />
+          <Route path="/blog/:post" exact component={BlogPostContainer} />
           
 
 

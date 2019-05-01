@@ -1,16 +1,25 @@
-import { postInfoBox } from "../js/tags";
+import { 
+    postBox,
+    paragraph,
+    heading,
+    image,
+    unorderedList,
+    orderedList
+} from "../js/tags";
 
 
 const BLOG_CONTENT = {
     title: "Blog",
 
     posts: [
-        postInfoBox(
+        postBox(
             "Test Post 1",
             new Date().toString(),
-            "This is the test summary"
+            "This is the test summary",
+            paragraph("This is a sample paragraph"),
+            orderedList(["Here are the topics I will cover"]),
         ),
-        postInfoBox(
+        postBox(
             "This is another cool post",
             new Date().toString(),
             "a new summary here about stuff"

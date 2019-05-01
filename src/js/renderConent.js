@@ -3,7 +3,7 @@ import React from 'react'
 
 const renderContent = ({tags}) => {
     return tags.map((tag, i) => {
-        const { content } = tag
+        const { content } = tag        
         switch(tag.type){
             case("p"):
                 return <p className="content content-paragraph" key={i}>{content}</p>

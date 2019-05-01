@@ -37,12 +37,12 @@ const heading = (size, content) => {
     }
 }
 
-const postInfoBox = (title, date, summary) => {
+const postBox = (title, date, summary, ...content) => {
     return {
-        type: "post-info",
         title,
         date,
-        summary
+        summary,
+        tags: content
     }
 }
 
@@ -105,7 +105,7 @@ export {
     image,
     heading,
 
-    postInfoBox,
+    postBox,
     listenInfoBox,
     projectInfoBox,
     eventInfoBox,
