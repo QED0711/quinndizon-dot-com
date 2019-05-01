@@ -1,6 +1,7 @@
 import React from 'react';
+import ProjectIconContainer from './ProjectIconContainer';
 
-import { LaptopIcon, MobileIcon, TabletIcon } from './projectIcons'
+
 
 const ProjectCardContainer = ({ currentProject }) => {
     
@@ -9,9 +10,8 @@ const ProjectCardContainer = ({ currentProject }) => {
     return(
         <div className="project-card-container">
             
-            {laptopImage && <LaptopIcon image={laptopImage} />}
-            {tabletImage && <TabletIcon image={tabletImage} />}
-            {mobileImage && <MobileIcon image={mobileImage} />}
+            <ProjectIconContainer laptopImage={laptopImage} tabletImage={tabletImage} mobileImage={mobileImage} />
+            
         </div>
     )
 }
