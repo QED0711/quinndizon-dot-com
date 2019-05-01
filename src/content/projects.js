@@ -21,7 +21,7 @@ const PROJECTS_CONTENT = {
             ["feature 1", "feature 2"],
             "https://github.com",
             "http://mywebsite",
-            "laptop Image",
+            "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/E6xpS0jFxik7ugje7/videoblocks-hi-tech-user-interface-head-up-display-with-digital-floating-information-for-background-computer-desktop-screen-display_h-k0x5hfm_thumbnail-full01.png",
             "tablet image",
             "Mobile Image",
             "Video"
