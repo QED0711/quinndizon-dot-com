@@ -32,7 +32,7 @@ const PROJECTS_CONTENT = {
             "Other Project",
             [
                 heading(2, "This is a heading"), 
-                orderedList("This is an ordered list item", "and another")
+                orderedList("This is an ordered list item", "and another"),
             ],
             "https://github.com",
             "http://mywebsite",
