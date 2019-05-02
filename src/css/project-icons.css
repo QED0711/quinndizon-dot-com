@@ -20,7 +20,7 @@
 	height: calc(100% - 2px);
     margin: 0 auto;
     background-color: white;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     border-radius: 2px;
 }

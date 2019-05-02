@@ -19,7 +19,6 @@ const ProjectsContainer = ({ match }) => {
         currentProject = projects.filter(project => reformatTitle(match.params.project) === project.title.toLowerCase())[0];
     }
 
-    console.log(currentProject)
     return(
         <div className="projects-container content-container">
             <TitleBox title={PROJECTS_CONTENT.title} />

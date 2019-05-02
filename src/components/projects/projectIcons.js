@@ -2,7 +2,6 @@
 import React from 'react';
 
 const LaptopIcon = ({ image }) => {
-    console.log(image)
     return(
         <div className="icon-container">
             <div className="laptop-screen-frame">

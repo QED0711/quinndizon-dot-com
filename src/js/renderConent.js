@@ -6,7 +6,7 @@ const renderContent = ({tags}) => {
         const { content } = tag        
         switch(tag.type){
             case("p"):
-                return <p className="content content-paragraph" key={i}>{content}</p>
+            return <p className="content content-paragraph" key={i}>{content}</p>
             case('ul'):
                 return(
                     <ul key={i} className="content content-list">

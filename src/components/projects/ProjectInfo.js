@@ -20,15 +20,13 @@ const ProjectInfo = ({project}) => {
                     <h3 className="project-title">{project.title}</h3>
                     
                     <div className="project-icons">
-                        {/* {project.desktopImage && <DesktopIcon />} */}
-                        {/* {project.desktopImage && <MobileIcon />} */}
                     </div>
                     
-                    <div className="project-features">
+                    {/* <div className="project-features">
                         <ul>
                             {renderFeatures(project.features)}
                         </ul>
-                    </div>
+                    </div> */}
 
             </Link>
             <div className="project-links">
