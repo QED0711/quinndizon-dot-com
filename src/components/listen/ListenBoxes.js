@@ -11,7 +11,7 @@ const ListenBoxes = ({works, setCurrentWork}) => {
     }   
 
     return(
-        <div className="listen-boxes">
+        <div className="listen-boxes content-selector-container">
             {renderListenBoxes(works)}
         </div>
     )

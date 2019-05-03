@@ -17,7 +17,7 @@ const ListenContainer = ({ match }) => {
     if(!work){
         currentWork = null;
     } else {
-        // currentWork = LISTEN_CONTENT.works.filter(work => work.title.toLowerCase() === reformatTitle(match.params.work))[0]
+        currentWork = LISTEN_CONTENT.works.filter(work => work.title.toLowerCase() === reformatTitle(match.params.work))[0]
     }
     
     return(

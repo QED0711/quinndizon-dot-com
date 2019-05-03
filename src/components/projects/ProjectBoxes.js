@@ -12,7 +12,7 @@ const ProjectBoxes = ({projects}) => {
     }
 
     return(
-        <div>
+        <div className="project-boxes content-selector-container">
             {renderProjectInfo(projects)}
         </div>
     )
