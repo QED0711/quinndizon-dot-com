@@ -4,33 +4,63 @@
 	/* padding: 5em; */
 }
 
-.desktop-screen-frame{
-	width: 15em;
-	height: 10em;
-	margin: 0 auto;
+.icon-body{
 	background-color: #616161;
-
-	border-radius: 4px;
-	padding-top: 5px
-
 }
 
 .image-screen{
 	width: calc(100% - 2px);
 	height: calc(100% - 2px);
-    margin: 0 auto;
+	margin: 0 auto;
     background-color: white;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 2px;
+	border-radius: 2px;
+	
+	box-shadow: 1px 1px 10px white inset;
 }
+
+
+
+
+
+
+
+.tablet-screen-frame{
+	height: 8em;
+	width: 6em;
+	margin: 0 auto;
+	padding: .5em 0.25em 0.75em;
+	border-radius: 8px;
+}
+
+.tablet-button{
+	height: .4em;
+	width: .4em;
+	background-color: #9b9b9b;
+	margin: .2em auto 0;
+	border-radius: 50%;
+}
+
+
+
+
+.mobile-screen-frame{
+	height: 5.5em;
+	width: 3.5em;
+	margin: 0 auto;
+	padding: 0.75em .1em .35em;
+	border-radius: 10px;
+}
+
+
 
 
 .laptop-screen-frame{
 	height: 7em;
 	width: 10em;
 	margin: 0 auto;
-	background-color: #616161;
+	
 	padding: .5em .4em;
 	border-radius: 8px
 }
@@ -39,7 +69,6 @@
 	height: 0.5em;
 	width: 13em;
 	margin: 0 auto;
-	background-color: #616161;
 	border-bottom-right-radius: 30px;
 	border-bottom-left-radius: 30px;
 }
