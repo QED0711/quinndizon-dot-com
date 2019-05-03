@@ -1,11 +1,33 @@
+.project-icon-container{
+	display: grid;
+	margin: 0 auto;
+}
+
 .icon-container{
 	/* width: 15em; */
 	margin: 1em auto;
 	/* padding: 5em; */
 }
 
+.icon-container:hover{
+	transform: scale(1.1);
+	animation-name: enlarge-icon;
+	animation-duration: .5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes enlarge-icon{
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(2.5);
+	}
+}
+
 .icon-body{
 	background-color: #616161;
+	box-shadow: 0 25px 50px #a7a7a7;
 }
 
 .image-screen{
@@ -13,7 +35,7 @@
 	height: calc(100% - 2px);
 	margin: 0 auto;
     background-color: white;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 	border-radius: 2px;
 	
@@ -48,7 +70,7 @@
 .mobile-screen-frame{
 	height: 5.5em;
 	width: 3.5em;
-	margin: 0 auto;
+	margin: 1em auto;
 	padding: 0.75em .1em .35em;
 	border-radius: 10px;
 }
