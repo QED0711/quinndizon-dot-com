@@ -9,8 +9,9 @@
 
     box-shadow: 5px 5px 20px var(--grey);
     border-radius: 4px;
+}
 
-    
+.sliding-container{
     position: relative;
     animation-name: slide-in;
     animation-duration: 1s;

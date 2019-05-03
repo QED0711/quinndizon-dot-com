@@ -14,13 +14,13 @@ const ProjectsContainer = ({ match }) => {
     const { projects } = PROJECTS_CONTENT;
 
     let [currentProject, setCurrentProject] = useState(null);
-
-    if(match.params.project && !currentProject){
+    let { project } = match.params
+    if(project && !currentProject){
         currentProject = projects.filter(project => reformatTitle(match.params.project) === project.title.toLowerCase())[0];
     }
 
     return(
-        <div className="projects-container content-container">
+        <div className={`projects-container content-container ${!project ? "sliding-container" : ""}`}>
             <TitleBox title={PROJECTS_CONTENT.title} />
 
             <ProjectBoxes projects={projects} />

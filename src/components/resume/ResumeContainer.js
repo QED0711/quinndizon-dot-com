@@ -18,7 +18,7 @@ const ResumeContainer = () => {
     let content = RESUME_CONTENT.items.filter(item => item.name === resumeItem)[0]
     
     return(
-        <div className="resume-container content-container">
+        <div className="resume-container content-container sliding-container">
             
             
             <TitleBox title={RESUME_CONTENT.title} />            

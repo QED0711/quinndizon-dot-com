@@ -7,7 +7,7 @@ import { TitleBox } from '../elements/stateless';
 class ContactContainer extends Component {
     render(){
         return(
-            <div className="contact-container content-container">
+            <div className="contact-container content-container sliding-container">
                 <TitleBox title={CONTACT_CONTENT.title} />
 
                 <form action="https://formspree.io/qdizon%40gmail%2ecom" method="POST">
