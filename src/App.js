@@ -15,9 +15,11 @@ import ContactContainer from './components/contact/ContactContainer';
 import BlogPostContainer from './components/blog/BlogPostContainer';
 
 // CSS
+import './css/variables.css';
 import './App.css';
 import './css/content-card.css';
 import './css/project-icons.css';
+import './css/content-container.css';
 
 class App extends Component {
   render() {

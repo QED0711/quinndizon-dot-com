@@ -1,0 +1,27 @@
+
+.content-container{
+    max-width: 1400px;
+    margin: 1em auto 0;
+
+    padding: 1em;
+
+    box-shadow: 5px 5px 20px var(--grey);
+    border-radius: 4px;
+
+    
+    position: relative;
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1); 
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in{
+    from{
+        right: 75em;
+
+    }
+    to{
+        right: 0em;
+    }
+}

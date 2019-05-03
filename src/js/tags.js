@@ -1,7 +1,7 @@
 import React from 'react';
 import { maxHeaderSize } from 'http';
 
-const paragraph = (content) => {
+const paragraph = (...content) => {
     return {
         type: "p",
         content

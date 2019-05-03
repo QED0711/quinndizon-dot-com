@@ -11,7 +11,7 @@ import EventInfoBoxes from './EventInfoBoxes'
 class EventsContainer extends Component {
     render(){
         return(
-            <div className="events-container">
+            <div className="events-container content-container">
                 <TitleBox title={EVENTS_CONTENT.title} />
 
                 <EventInfoBoxes events={EVENTS_CONTENT.events} />

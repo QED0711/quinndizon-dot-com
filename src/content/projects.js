@@ -18,7 +18,7 @@ const PROJECTS_CONTENT = {
             "Personal Website",
             [
                 heading(3, "Personal Website"),
-                paragraph("This is a paragraph about this project"),
+                paragraph("This is a paragraph about this project", "This is a second sentence about this project"),
                 unorderedList("Here is an list item", "here is another"),
             ],
             "https://github.com",
