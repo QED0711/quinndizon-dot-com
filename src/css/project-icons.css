@@ -12,7 +12,7 @@
 .icon-container:hover{
 	transform: scale(1.1);
 	animation-name: enlarge-icon;
-	animation-duration: .5s;
+	animation-duration: .35s;
 	animation-fill-mode: forwards;
 }
 
