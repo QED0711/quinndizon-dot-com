@@ -10,7 +10,7 @@ const BlogPosts = ({posts}) => {
     }
 
     return(
-        <div>
+        <div className="blog-posts content-selector-container">
             {renderPostInfo(posts)}
         </div>
     )

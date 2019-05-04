@@ -23,7 +23,10 @@ const BLOG_CONTENT = {
         postBox(
             "This is another cool post",
             new Date().toString(),
-            "a new summary here about stuff"
+            "a new summary here about stuff",
+
+            heading(3, "This is my blog post title"),
+            paragraph("This is a paragraph in my blog post")
         )
     ]
 }
