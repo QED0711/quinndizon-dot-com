@@ -27,6 +27,20 @@ const RESUME_CONTENT = {
             heading(5, "first skill"),
             orderedList("item 1", "item 2")
         ),
+        resumeItem(
+            "Technologies",
+            heading(3, "Technologies"),
+            paragraph("I know these technologies"),
+            heading(5, "first technologies"),
+            orderedList("item 1", "item 2")
+        ),
+        resumeItem(
+            "Education",
+            heading(3, "Education"),
+            paragraph("My Education"),
+            heading(5, "Something else"),
+            orderedList("item 1", "item 2")
+        ),
     ]
 
 }
