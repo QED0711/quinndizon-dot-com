@@ -19,7 +19,14 @@
 }
 
 .content-selector-card{
-    height: 7em;
+    max-height: 10em;
     padding: 1em;
+    color: black;
 }
+
+.content-selector-link{
+    text-decoration: none;
+}
+
+
 
