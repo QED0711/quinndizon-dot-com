@@ -14,20 +14,11 @@ const ProjectInfo = ({project}) => {
 
     return(      
         
-        <div className="project-info content-card content-selector-card">
-            <Link to={`/projects/${parseTitle(project.title)}`} >
-
+        <Link to={`/projects/${parseTitle(project.title)}`} >
+            <div className="project-info content-card content-selector-card">
                     <h3 className="project-title">{project.title}</h3>
-                    
-                    <div className="project-icons">
-                    </div>
-
-            </Link>
-            <div className="project-links">
-                {project.githubLink && <a href={project.githubLink} target="_blank">Github Repository</a> }
-                {project.websiteLink && <a href={project.websiteLink} target="_blank">Website</a> }
             </div>
-        </div>
+        </Link>
     )
 
 }
