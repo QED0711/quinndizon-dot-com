@@ -19,6 +19,7 @@ import './css/variables.css';
 import './App.css';
 import './css/content-card.css';
 import './css/content-selector.css';
+import './css/project-icon-container.css';
 import './css/project-icons.css';
 import './css/content-container.css';
 
