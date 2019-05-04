@@ -35,6 +35,8 @@ const renderContent = ({tags}) => {
                 return <h5 key={i} className="content content-heading-5">{content}</h5>
             case("h6"):
                 return <h6 key={i} className="content content-heading-6">{content}</h6>
+            case("html"):
+                    return content
         }
     })
 }

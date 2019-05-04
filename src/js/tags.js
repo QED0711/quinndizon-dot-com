@@ -37,6 +37,26 @@ const heading = (size, content) => {
     }
 }
 
+const htmlInsert = (content) => {
+    return {
+        type: "html",
+        content
+    }
+}  
+
+
+
+
+
+
+
+
+
+
+
+// OBJECT TAG RENDERERS
+
+
 const postBox = (title, date, summary, ...content) => {
     return {
         title,
@@ -105,6 +125,7 @@ export {
     orderedList,
     image,
     heading,
+    htmlInsert,
 
     postBox,
     listenInfoBox,

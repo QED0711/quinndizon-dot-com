@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { paragraph } from '../js/tags'
+import { paragraph, htmlInsert } from '../js/tags'
 
 const ABOUT_CONTENT = {
     
@@ -8,14 +8,18 @@ const ABOUT_CONTENT = {
 
     shortBio: {
         tags: [
-            paragraph("this is the short bio made from a tag generator")
+            paragraph("this is the short bio made from a tag generator"),
+            htmlInsert(<p>
+                <em>This is <strong>customized</strong> inserted html</em>
+            </p>),
         ]
     },
 
     fullBio: {
         tags: [
             paragraph("this is the full bio made from a tag generator"),
-            paragraph("this is a second paragraph in the full bio")
+            paragraph("this is a second paragraph in the full bio"),
+            
         ]
     } 
 }
