@@ -22,6 +22,7 @@ import './css/content-selector.css';
 import './css/project-icon-container.css';
 import './css/project-icons.css';
 import './css/content-container.css';
+import './css/events.css';
 
 class App extends Component {
   render() {

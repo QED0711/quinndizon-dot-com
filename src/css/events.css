@@ -1,0 +1,10 @@
+.event-box{
+
+    min-width: 200px;
+    max-width: 600px;
+    padding: 1em;
+
+    box-shadow: 5px 5px 10px var(--grey);
+
+    text-align: left;
+}
