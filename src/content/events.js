@@ -10,7 +10,14 @@ const EVENTS_CONTENT = {
             "7:00 pm",
             "At this place",
             "This is a summary of the event",
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Monasterio_Khor_Virap%2C_Armenia%2C_2016-10-01%2C_DD_25.jpg/600px-Monasterio_Khor_Virap%2C_Armenia%2C_2016-10-01%2C_DD_25.jpg"
+            "https://sites.google.com/site/marylandnoycescholars/_/rsrc/1465435380917/home/secondary.jpg"
+        ), 
+        eventInfoBox(
+            "This is another event",
+            "Time TBA",
+            "University of Maryland",
+            "This is where I would write about this event",
+            "https://yt3.ggpht.com/a/AGF-l7_ecp3_edFOBxWn3Mo4vCQ1w59GAyPa91dMlA=s900-mo-c-c0xffffffff-rj-k-no"
         ), 
     ]
 }

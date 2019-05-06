@@ -23,6 +23,7 @@ import './css/project-icon-container.css';
 import './css/project-icons.css';
 import './css/content-container.css';
 import './css/events.css';
+import './css/resume.css'
 
 class App extends Component {
   render() {

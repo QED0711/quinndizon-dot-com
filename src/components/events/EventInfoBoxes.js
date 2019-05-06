@@ -9,7 +9,7 @@ const EventInfoBoxes = ({ events }) => {
         })
     }
     return(
-        <div className="event-info-boxes">
+        <div className="event-info-boxes content-selector-container">
             {renderEventsBoxes(events)}  
         </div>
     )

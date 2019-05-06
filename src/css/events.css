@@ -7,4 +7,44 @@
     box-shadow: 5px 5px 10px var(--grey);
 
     text-align: left;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;  
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'image heading'
+    'image description';
+
+    grid-gap: .75em;
+}
+
+/* EVENT IMAGE */
+
+.event-image{
+    grid-area: image;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    margin: 0 auto;
+}
+
+
+/* EVENT HEADING */
+.event-heading{
+    grid-area: heading;
+}
+
+.event-heading h3, .event-heading h5{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+/* EVENT DESCRIPTION */
+.event-description{
+    grid-area: description;
 }
