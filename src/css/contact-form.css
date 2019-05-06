@@ -1,0 +1,61 @@
+
+
+/* CONTACT FORM GENERAL STYLES */
+.contact-form{
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, auto);
+
+    grid-template-areas: 
+    'name . .'
+    'email . .'
+    'subject subject .'
+    'message message message'
+    'submit . .';
+
+    text-align: left;
+}
+
+.contact-form input{
+    width: 30em;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: .5;
+
+    font-size: 1.3em;
+}
+
+.contact-form label h3{
+    margin: 1em 0 -.5em;
+}
+
+
+
+/* GRID AREAS */
+
+.contact-form-name{
+    grid-area: name;
+    width: 100%;
+}
+
+.contact-form-email{
+    grid-area: email;
+    width: 100%;
+}
+
+.contact-form-subject{
+    grid-area: subject;
+    width: 100%;
+}
+
+.contact-form-message{
+    grid-area: message;
+    width: 100%;
+}
+
+.contact-form-submit{
+    grid-area: submit;
+    width: 100%;
+}
+
