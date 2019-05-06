@@ -14,8 +14,6 @@ const EventBox = ({ event }) => {
             </div>
             <div className="event-image" style={{
                 backgroundImage: `url(${event.image})`,
-                // height: 100,
-                // width: 100
             }}></div>
         </div>
     )

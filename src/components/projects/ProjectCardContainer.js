@@ -11,7 +11,9 @@ const ProjectCardContainer = ({ currentProject }) => {
         <div className="project-card-container">            
             <ProjectIconContainer laptopImage={laptopImage} tabletImage={tabletImage} mobileImage={mobileImage} />
             <ProjectLinks project={currentProject} />
-            {renderContent(currentProject)}
+            <div className="inner-content-body">
+                {renderContent(currentProject)}
+            </div>
         </div>
     )
 }
