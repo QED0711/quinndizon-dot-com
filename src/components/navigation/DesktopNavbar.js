@@ -5,14 +5,28 @@ class DesktopNavbar extends Component {
 
     render(){
         return(
-            <nav className="desktop-navbar">
-                <Link to="/">About</Link>
-                <Link to="/events">Events</Link>
-                <Link to="/listen">Listen</Link>
-                <Link to="/projects">Projects</Link>
-                <Link to="/resume">Resume</Link>
-                <Link to="/contact">Contact</Link>
-                <Link to="/blog">Blog</Link>
+            <nav className="desktop-navbar navbar">
+                <div>
+                    <Link to="/">About</Link>
+                </div>
+                <div>
+                    <Link to="/events">Events</Link>
+                </div>
+                <div>
+                    <Link to="/listen">Listen</Link>
+                </div>
+                <div>
+                    <Link to="/projects">Projects</Link>
+                </div>
+                <div>
+                    <Link to="/resume">Resume</Link>
+                </div>
+                <div>
+                    <Link to="/contact">Contact</Link>
+                </div>
+                <div>
+                    <Link to="/blog">Blog</Link>
+                </div>
             </nav>
         )
     }

@@ -17,6 +17,7 @@ import BlogPostContainer from './components/blog/BlogPostContainer';
 // CSS
 import './css/variables.css';
 import './App.css';
+import './css/navbar.css';
 import './css/content-card.css';
 import './css/content-selector.css';
 import './css/project-icon-container.css';

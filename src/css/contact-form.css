@@ -18,7 +18,7 @@
 }
 
 .contact-form input{
-    width: 30em;
+    width: calc(100% - 2em);
     border: 2px solid black;
     border-radius: 8px;
     padding: .5;
@@ -30,6 +30,21 @@
     margin: 1em 0 -.5em;
 }
 
+
+@media only screen and (max-width: 1000px){
+    .contact-form{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5, auto);
+    }
+
+    .contact-form div{
+        width: 100%;
+    }
+
+    .contact-form input{
+        width: 100%;
+    }
+}
 
 
 /* GRID AREAS */
@@ -59,3 +74,17 @@
     width: 100%;
 }
 
+
+
+/* MESSAGE CSS */
+
+.contact-form-message textarea{
+    width: calc(100% - 3em);
+    height: 10em;
+
+    border-radius: 8px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 10px var(--grey) inset;
+    padding: 1em;
+    font-size: 1.5em;
+}
