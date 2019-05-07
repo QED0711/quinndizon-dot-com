@@ -1,6 +1,7 @@
 
 .desktop-navbar{
     width: calc(100% - 8em);
+    max-width: 1600px;
     margin: 0 auto;
     padding: 3em 0;
     display: grid;
