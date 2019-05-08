@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 // COMPONENTS
+import LandingContainer from './components/landing/LandingContainer';
 import NavContainer from './components/navigation/NavContainer';
 import AboutContainer from './components/about/AboutContainer';
 import EventsContainer from './components/events/EventsContainer';
@@ -33,6 +34,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
+          <LandingContainer />
           <NavContainer />
         
           
