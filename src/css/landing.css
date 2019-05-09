@@ -68,9 +68,20 @@
         font-family: Arial, Helvetica, sans-serif;
         color: var(--clear);
         letter-spacing: 0.25em;
-
+        
         animation-name: title-reveal-mobile;
         animation-duration: 5s;
         animation-delay: 1s;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .landing-title, .landing-subtitle{
+        letter-spacing: 1px;
+        color: var(--dark1); 
+        animation-name: none;
+        white-space: normal;
+        text-shadow: 1px 1px 5px var(--grey);
+
     }
 }
