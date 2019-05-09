@@ -1,0 +1,27 @@
+
+/* LANDING TITLE */
+
+.landing-title, .landing-subtitle{
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+
+    animation-name: title-reveal;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    
+    letter-spacing: 2em;
+    color: var(--clear);
+}
+
+
+@keyframes title-reveal{
+    0%{
+        letter-spacing: 2em;
+        color: var(--clear);
+    }
+    100%{
+        letter-spacing: 0.5em;
+        color: var(--dark);
+    }
+}
