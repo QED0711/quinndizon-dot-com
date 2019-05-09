@@ -19,9 +19,11 @@
 
 .contact-form input{
     width: calc(100% - 2em);
-    border: 2px solid black;
-    border-radius: 8px;
-    padding: .5;
+    /* border: 2px solid black; */
+    border: none;
+    box-shadow: 5px 5px 20px var(--grey);
+    border-radius: 1px;
+    padding: .5em;
 
     font-size: 1.3em;
 }
@@ -51,27 +53,22 @@
 
 .contact-form-name{
     grid-area: name;
-    width: 100%;
 }
 
 .contact-form-email{
     grid-area: email;
-    width: 100%;
 }
 
 .contact-form-subject{
     grid-area: subject;
-    width: 100%;
 }
 
 .contact-form-message{
     grid-area: message;
-    width: 100%;
 }
 
 .contact-form-submit{
     grid-area: submit;
-    width: 100%;
 }
 
 
@@ -81,10 +78,38 @@
 .contact-form-message textarea{
     width: calc(100% - 3em);
     height: 10em;
+    margin-bottom: 1em;
 
-    border-radius: 8px;
-    border: 2px solid black;
-    box-shadow: 3px 3px 10px var(--grey) inset;
+    border-radius: 1px;
+    border: none;
+    box-shadow: 3px 3px 10px var(--grey);
     padding: 1em;
     font-size: 1.5em;
+}
+
+
+
+@media only screen and (max-width: 460px){
+    .contact-form{
+        /* transform: scale(0.95); */
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: 1fr;
+        padding: 0;
+        /* grid-template-areas:
+        'name name name'
+        'email email email'
+        'subject subject subject'
+        'message message message'
+        'submit submit submit'; */
+    }
+
+    .contact-form input{
+        width: 100%;
+        padding: 0.25em 0;
+    }
+
+    .contact-form textarea{
+        width: 100%;
+        padding: 0.25em 0;
+    }
 }
