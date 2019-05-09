@@ -40,7 +40,7 @@
 
 @keyframes title-reveal{
     0%{
-        letter-spacing: 2em;
+        letter-spacing: 1.25em;
         color: var(--clear);
     }
     100%{
@@ -50,11 +50,27 @@
     }
 }
 
-@media only screen and (max-width: 1000px){
+@keyframes title-reveal-mobile{
+    0%{
+        letter-spacing: 0.6em;
+        color: var(--clear);
+    }
+    100%{
+        letter-spacing: 0.5em;
+        color: var(--dark1);
+        text-shadow: 1px 1px 5px var(--grey);
+    }
+}
+
+@media only screen and (max-width: 1300px){
     .landing-title, .landing-subtitle{
         font-weight: 300;
         font-family: Arial, Helvetica, sans-serif;
-        color: var(--dark1);
+        color: var(--clear);
         letter-spacing: 0.25em;
+
+        animation-name: title-reveal-mobile;
+        animation-duration: 5s;
+        animation-delay: 1s;
     }
 }
