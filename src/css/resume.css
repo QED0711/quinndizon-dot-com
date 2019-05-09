@@ -2,4 +2,27 @@
 
 .resume-button{
     cursor: pointer;
+    margin: 1em 0.5em 0;
+    background-color: var(--light1);
+    border: none;
+    box-shadow: 2px 2px 10px var(--grey);
+    padding: 0 0.5em;
+    border-radius: 8px;
+}
+
+.resume-button:hover{
+    animation-name: res-btn-mouse;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes res-btn-mouse{
+    from{
+        box-shadow: 2px 2px 10px var(--grey);
+    }
+    to{
+        box-shadow: 5px 5px 20px var(--grey);
+        letter-spacing: 0.1em;
+        text-shadow: 5px 5px 15px var(--grey);
+    }
 }
