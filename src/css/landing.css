@@ -1,9 +1,37 @@
 
 
 .landing-container{
-    padding: 12em 0;
+    height: 36em;
+    background-image: url("https://www.musicnotes.com/images2/pro/sheet-music-pile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: calc(100% - 8em);
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
+/* LANDING TEXT CONTAINER */
+
+.landing-text{
+    
+    background-color: white;
+    height: 100%;
+    
+    animation-name: reveal-background;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    animation-timing-function: ease-in; 
+}
+
+@keyframes reveal-background{
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: rgba(212, 212, 212, 0.507);
+    }
+}
 
 /* LANDING TITLE */
 
@@ -18,7 +46,21 @@
     color: var(--clear);
     
     white-space: nowrap;
+
 }
+
+.landing-title{
+    position: relative;
+    top: 3em;
+    
+}
+
+.landing-subtitle{
+    position: relative;
+    top: 7em;
+}
+
+
 
 @media only screen and (min-width: 1001px){
     .landing-title{
@@ -33,7 +75,7 @@
         font-size: 1.5em;
         
         animation-duration: 7s;
-        animation-delay: 3s;
+        animation-delay: 2s;
     }
 } 
 

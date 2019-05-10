@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { paragraph, htmlInsert } from '../js/tags'
+import { paragraph, htmlInsert, image } from '../js/tags'
 
 const ABOUT_CONTENT = {
     
@@ -8,6 +8,7 @@ const ABOUT_CONTENT = {
 
     shortBio: {
         tags: [
+            image("https://www.musicnotes.com/images2/pro/sheet-music-pile.jpg", "sheet music pile"),
             paragraph("this is the short bio made from a tag generator"),
             htmlInsert(<p>
                 <em>This is <strong>customized</strong> inserted html</em>
