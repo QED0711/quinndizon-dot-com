@@ -15,6 +15,12 @@
     box-sizing: border-box; 
 }
 
+@media only screen and (max-width: 850px){
+    .content-container{
+        width: calc(100% - 2em);
+    }
+}
+
 .sliding-container{
     position: relative;
     animation-name: slide-in;

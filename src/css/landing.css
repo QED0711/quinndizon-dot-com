@@ -1,13 +1,20 @@
 
 
 .landing-container{
-    height: 36em;
+    height: 24em;
     background-image: url("https://www.musicnotes.com/images2/pro/sheet-music-pile.jpg");
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     width: calc(100% - 8em);
     max-width: 1600px;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 850px){
+    .landing-container{
+        width: 100%;
+        margin: 0;
+    }
 }
 
 /* LANDING TEXT CONTAINER */
@@ -51,13 +58,13 @@
 
 .landing-title{
     position: relative;
-    top: 3em;
+    top: 2em;
     
 }
 
 .landing-subtitle{
     position: relative;
-    top: 7em;
+    top: 5em;
 }
 
 
