@@ -16,7 +16,6 @@
 	animation-fill-mode: forwards;
 }
 
-
 @keyframes enlarge-icon{
 	from{
 		transform: scale(1);

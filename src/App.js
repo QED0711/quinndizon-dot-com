@@ -22,6 +22,7 @@ import './css/landing.css';
 import './css/navbar.css';
 import './css/content-card.css';
 import './css/content-selector.css';
+import './css/listen.css';
 import './css/projects.css';
 import './css/project-icon-container.css';
 import './css/project-icons.css';
