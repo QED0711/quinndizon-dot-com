@@ -31,6 +31,7 @@ import './css/events.css';
 import './css/resume.css'
 import './css/inner-content-body.css'
 import './css/contact-form.css'
+import './css/blog-post.css'
 
 class App extends Component {
   render() {

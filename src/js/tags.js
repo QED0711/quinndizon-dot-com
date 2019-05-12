@@ -1,5 +1,4 @@
 import React from 'react';
-import { maxHeaderSize } from 'http';
 
 const paragraph = (...content) => {
     return {
