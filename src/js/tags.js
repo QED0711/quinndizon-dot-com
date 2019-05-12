@@ -29,6 +29,14 @@ const image = (content, alt) => {
     }
 }
 
+const divImage = (content, settings) => {
+    return{
+        type: "div-image",
+        content,
+        settings
+    }
+}
+
 const heading = (size, content) => {
     return {
         type: `h${size}`,
@@ -123,6 +131,7 @@ export {
     unorderedList,
     orderedList,
     image,
+    divImage,
     heading,
     htmlInsert,
 
