@@ -1,8 +1,8 @@
 
 
 .landing-container{
-    height: 24em;
-    background-image: url("https://www.musicnotes.com/images2/pro/sheet-music-pile.jpg");
+    height: 30em;
+    background-image: url("https://images.pexels.com/photos/616852/pexels-photo-616852.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: calc(100% - 8em);
@@ -124,7 +124,7 @@
     }
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 730px){
     .landing-title, .landing-subtitle{
         letter-spacing: 1px;
         color: var(--dark1); 
