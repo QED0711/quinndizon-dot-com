@@ -8,6 +8,7 @@
     width: calc(100% - 8em);
     max-width: 1600px;
     margin: 0 auto;
+
 }
 
 @media only screen and (max-width: 850px){
@@ -23,12 +24,17 @@
     
     background-color: white;
     height: 100%;
+    width: 100%;
     
     animation-name: reveal-background;
     animation-duration: 7s;
     animation-fill-mode: forwards;
     animation-delay: 3s;
     animation-timing-function: ease-in; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @keyframes reveal-background{
@@ -55,18 +61,6 @@
     white-space: nowrap;
 
 }
-
-.landing-title{
-    position: relative;
-    top: 2em;
-    
-}
-
-.landing-subtitle{
-    position: relative;
-    top: 5em;
-}
-
 
 
 @media only screen and (min-width: 1001px){

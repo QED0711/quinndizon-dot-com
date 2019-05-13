@@ -36,7 +36,7 @@ class ContactContainer extends Component {
                     <div className="contact-form-message"> 
                         <label htmlFor="message-body"><h3>Your Message:</h3></label>                    
                         <br/>
-                        <textarea id="message-body" name="message-body"></textarea>
+                        <textarea id="message-body" name="message-body" style={{resize: "none"}} ></textarea>
                     </div>
                     
 
