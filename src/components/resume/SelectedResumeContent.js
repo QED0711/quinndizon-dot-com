@@ -4,8 +4,6 @@ import renderContent from '../../js/renderConent';
 
 const SelectedResumeContent = ({ content }) => {
 
-    
-    console.log(content)
     return(
         <div className="selected-resume-content inner-content-body">
 
