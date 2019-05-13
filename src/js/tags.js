@@ -1,31 +1,51 @@
 import React from 'react';
 
-const paragraph = (...content) => {
+const extractSettings = (content) => {
+    let settings;
+    let lastIndex = content.length - 1
+    
+    if(typeof content[lastIndex] === "object"){
+        settings = content[lastIndex];
+        content = content.slice(0, content.length - 1)
+    } else {
+        settings = {};
+    }
+    return {settings, content}
+}
+
+const paragraph = (...contentArr) => {
+    const { settings, content } = extractSettings(contentArr);
     return {
         type: "p",
-        content
+        content,
+        settings
     }
 }
 
-const unorderedList = (...content) => {
+const unorderedList = (...contentArr) => {
+    const { settings, content } = extractSettings(contentArr);
     return {
         type: "ul",
-        content
+        content,
+        settings
     }
 }
 
-const orderedList = (...content) => {
+const orderedList = (...contentArr) => {
+    const { settings, content } = extractSettings(contentArr);
     return {
         type: "ol",
-        content
+        content,
+        settings
     }
 }
 
-const image = (content, alt) => {
+const image = (content, alt, settings) => {
     return {
         type: "image",
         content,
-        alt
+        alt,
+        settings
     }
 }
 
@@ -37,10 +57,11 @@ const divImage = (content, settings) => {
     }
 }
 
-const heading = (size, content) => {
+const heading = (size, content, settings) => {
     return {
         type: `h${size}`,
-        content
+        content,
+        settings
     }
 }
 

@@ -32,7 +32,7 @@ import {
           'The abridged version for those who haven\'t studied non-tonal theory is this.',
           'We can think of collections of pitches in terms of what pitch classes they contain (A,C,D, etc.).',
           "We can also think about them in terms of how those pitch classes are related to each other (intervals - the sapce between two pitches/pitch classes).",
-          "When we put pitch-classes in a specified order"
+          "When we put pitch-classes in a specified order",
       ),
       htmlInsert(<hr/>),
       heading(2, "What is a LIPCS"),
