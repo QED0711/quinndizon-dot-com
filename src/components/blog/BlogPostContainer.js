@@ -13,6 +13,8 @@ const BlogPostContainer = ({ match }) => {
     
     return(
         <div className="blog-post-container content-container">
+            <h1 style={{textAlign: 'center'}}>{post.title}</h1>
+            <hr/>
             {renderContent(post)}
         </div>
     )
