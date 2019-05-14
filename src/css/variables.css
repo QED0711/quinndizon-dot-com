@@ -1,7 +1,11 @@
 :root{
     --grey: #616161;
-    --light1: whitesmoke;
+    
+    --light1: #f5f5f5;
+    --light2: #ebebeb;
+    
     --dark1: #1a1a1a;
+    --dark2: #363636;
 
     --clear: #ffffff00;
 }

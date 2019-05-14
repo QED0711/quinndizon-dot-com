@@ -1,12 +1,14 @@
 
 .content-card{
     box-shadow: 4px 4px 10px grey;
+    background-color: white;
 }
 
 .content-card:hover{    
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
+    
     animation-name: zoom;
-    animation-duration: 0.15s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 
@@ -16,7 +18,10 @@
         box-shadow: 4px 4px 10px grey;
     }
     to{
-        transform: scale(1.01);
+        transform: scale(0.97);
         box-shadow: 10px 10px 20px grey;
+        background-color: var(--light1);
+        color: var(--dark2);
+        text-shadow: 10px 10px 15px var(--dark2);
     }
 }
