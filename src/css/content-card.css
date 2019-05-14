@@ -18,7 +18,7 @@
         box-shadow: 4px 4px 10px grey;
     }
     to{
-        transform: scale(0.97);
+        transform: scale(1.03);
         box-shadow: 10px 10px 20px grey;
         background-color: var(--light1);
         color: var(--dark2);
