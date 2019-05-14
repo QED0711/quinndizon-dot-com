@@ -17,7 +17,7 @@ const PROJECTS_CONTENT = {
         projectInfoBox(
             "Personal Website",
             [
-                heading(3, "Personal Website"),
+                heading(2, "Personal Website", {textAlign: 'center'}),
                 paragraph("This is a paragraph about this project", "This is a second sentence about this project"),
                 unorderedList("Here is an list item", "here is another"),
             ],
@@ -31,13 +31,41 @@ const PROJECTS_CONTENT = {
         projectInfoBox(
             "Other Project",
             [
-                heading(2, "This is a heading"), 
+                heading(2, "This is a heading", {textAlign: 'center'}), 
                 orderedList("This is an ordered list item", "and another"),
             ],
             "https://github.com",
             "http://mywebsite",
             "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/E6xpS0jFxik7ugje7/videoblocks-hi-tech-user-interface-head-up-display-with-digital-floating-information-for-background-computer-desktop-screen-display_h-k0x5hfm_thumbnail-full01.png",
             "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/E6xpS0jFxik7ugje7/videoblocks-hi-tech-user-interface-head-up-display-with-digital-floating-information-for-background-computer-desktop-screen-display_h-k0x5hfm_thumbnail-full01.png",
+            null,
+            // "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/E6xpS0jFxik7ugje7/videoblocks-hi-tech-user-interface-head-up-display-with-digital-floating-information-for-background-computer-desktop-screen-display_h-k0x5hfm_thumbnail-full01.png",
+            "Video"
+        ),
+        projectInfoBox(
+            "Git Checklist",
+            [
+                heading(2, "Git Checklist", {textAlign: 'center'}), 
+                orderedList("An electron desktop application to help users manage track and manage incremental changes in their git workflow", "provides a simple UI to checkoff tasks and commit them to the current branch"),
+            ],
+            "https://github.com",
+            null,
+            "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/E6xpS0jFxik7ugje7/videoblocks-hi-tech-user-interface-head-up-display-with-digital-floating-information-for-background-computer-desktop-screen-display_h-k0x5hfm_thumbnail-full01.png",
+            null,
+            null,
+            // "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/E6xpS0jFxik7ugje7/videoblocks-hi-tech-user-interface-head-up-display-with-digital-floating-information-for-background-computer-desktop-screen-display_h-k0x5hfm_thumbnail-full01.png",
+            "Video"
+        ),
+        projectInfoBox(
+            "CSS Compiler",
+            [
+                heading(2, "CSS Compiler", {textAlign: 'center'}), 
+                orderedList("A CSS component designer toolkit built in electron", "provides a simple UI to checkoff tasks and commit them to the current branch"),
+            ],
+            "https://github.com",
+            null,
+            "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/E6xpS0jFxik7ugje7/videoblocks-hi-tech-user-interface-head-up-display-with-digital-floating-information-for-background-computer-desktop-screen-display_h-k0x5hfm_thumbnail-full01.png",
+            null,
             null,
             // "https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/E6xpS0jFxik7ugje7/videoblocks-hi-tech-user-interface-head-up-display-with-digital-floating-information-for-background-computer-desktop-screen-display_h-k0x5hfm_thumbnail-full01.png",
             "Video"
