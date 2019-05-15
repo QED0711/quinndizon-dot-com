@@ -22,6 +22,24 @@
     box-sizing: border-box; 
 }
 
+@media only screen and (max-width: 480px){
+    .event-box{
+        grid-template-rows: 2fr auto 1fr;
+        grid-template-columns: auto;  
+        grid-template-areas: 
+        'image'
+        'heading'
+        'description';
+    }
+}
+
+
+
+
+
+
+
+
 /* EVENT IMAGE */
 
 .event-image{
@@ -52,3 +70,4 @@
 .event-description{
     grid-area: description;
 }
+
