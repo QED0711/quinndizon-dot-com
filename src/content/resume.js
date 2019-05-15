@@ -35,23 +35,99 @@ const RESUME_CONTENT = {
             ),
             htmlInsert(<hr/>),
         ),
+        
+        
         resumeItem(
-            "Skills",
+            "Skills & Technologies",
             heading(2, "Skills"),
-            paragraph("Here is a skills introduction"),
-            heading(4, "first skill"),
-            orderedList("item 1", "item 2")
+            
+            heading(3, "Soft Skills", textUnitStyle),
+            unorderedList(
+                "Creative problem solver",
+                "Self directed learner",
+                "Well organized",
+                "Leadership & team experience",
+                "Excellent time management",
+                "Self starter",
+                textUnitStyle
+            ),
+            
+            
+            htmlInsert(<hr/>),
+            
+            heading(3, "Music", textUnitStyle),
+            unorderedList(
+                "Composition",
+                "Conducting",
+                "Arranging",
+                "Engraving",
+                
+                textUnitStyle
+                ),
+                
+            htmlInsert(<hr/>),
+                
+            heading(3, "Technologies", textUnitStyle),
+            
+            heading(4, "Javascript", {margin: "1em 0 0"}),
+            unorderedList(
+                "ECS6",
+                "React + Redux",
+                "Node",
+                "Electron",
+                "JQuery",
+                textUnitStyle
+            ),
+
+            heading(4, "Ruby", {margin: "1em 0 0"}),
+            unorderedList(
+                "Rails",
+                textUnitStyle
+            ),
+            
+            heading(4, "HTML & CSS", {margin: "1em 0 0"}),
+            unorderedList(
+                "HTML5",
+                "CSS3",
+                "Bootstrap",
+                textUnitStyle
+            ),
+            
+            heading(4, "Databases", {margin: "1em 0 0"}),
+            unorderedList(
+                "SQL",
+                "GraphQL",
+                textUnitStyle
+            ),
+            
+            heading(4, "Testing", {margin: "1em 0 0"}),
+            unorderedList(
+                "Mocha",
+                textUnitStyle
+            ),
+
+            heading(4, "Version Control", {margin: "1em 0 0"}),
+            unorderedList(
+                "Git + Github",
+                textUnitStyle
+            ),
+            
+            heading(4, "Other", {margin: "1em 0 0"}),
+            unorderedList(
+                "MVC",
+                "Rest",
+                textUnitStyle
+            ),
+
+                
+            
         ),
-        resumeItem(
-            "Technologies",
-            heading(2, "Technologies"),
-            paragraph("I know these technologies"),
-            heading(4, "first technologies"),
-            orderedList("item 1", "item 2")
-        ),
+        
+        
+        
         resumeItem(
             "Education",
-            heading(1, "Education"),
+            heading(2, "Education"),
             
             heading(3, "Data Science Bootcamp", textUnitStyle),
             heading(4, "Flatiron School, Washington D.C.", {...textUnitStyle, fontWeight: 500}),
