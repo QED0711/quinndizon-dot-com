@@ -11,6 +11,12 @@ import {
     heading
 } from '../js/tags';
 
+import {
+    headingStyles,
+    textUnitStyle
+} from './tagStyles';
+
+
 const RESUME_CONTENT = {
     title: "Resume",
 
@@ -45,10 +51,35 @@ const RESUME_CONTENT = {
         ),
         resumeItem(
             "Education",
-            heading(2, "Education"),
-            paragraph("My Education"),
-            heading(4, "Something else"),
-            orderedList("item 1", "item 2")
+            heading(1, "Education"),
+            
+            heading(3, "Data Science Bootcamp", textUnitStyle),
+            heading(4, "Flatiron School, Washington D.C.", {...textUnitStyle, fontWeight: 500}),
+            paragraph("2019", {margin: '0 0 1em'}),
+
+            heading(3, "Doctorate of Musical Arts - Composition", textUnitStyle),
+            heading(4, "University of Maryland, College Park", {...textUnitStyle, fontWeight: 500}),
+            paragraph("2015 - 2019", {margin: '0 0 1em'}),
+        
+            
+            heading(3, "Web Development Community Bootcamp", textUnitStyle),
+            heading(4, "Flatiron School", {...textUnitStyle, fontWeight: 500}),
+            paragraph("2018", {margin: '0 0 1em'}),
+            
+            heading(3, "Master of Music - Orchestral Conducting", textUnitStyle),
+            heading(4, "University of Lousville", {...textUnitStyle, fontWeight: 500}),
+            paragraph("2013 - 2015", {margin: '0 0 1em'}),
+        
+            
+            heading(3, "Master of Music - Composition", textUnitStyle),
+            heading(4, "University of Lousville", {...textUnitStyle, fontWeight: 500}),
+            paragraph("2011 - 2013", {margin: '0 0 1em'}),
+        
+            
+            heading(3, "Bachelors of Music - Theory & Composition", textUnitStyle),
+            heading(4, "The College of Wooster", {...textUnitStyle, fontWeight: 500}),
+            paragraph("2007 - 2011", {margin: '0 0 1em'}),
+
         ),
     ]
 
