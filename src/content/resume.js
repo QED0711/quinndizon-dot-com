@@ -38,7 +38,7 @@ const RESUME_CONTENT = {
         
         
         resumeItem(
-            "Skills & Technologies",
+            "Skills and Technologies",
             heading(2, "Skills"),
             
             heading(3, "Soft Skills", textUnitStyle),

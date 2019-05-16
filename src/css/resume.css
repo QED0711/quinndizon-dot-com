@@ -26,3 +26,11 @@
         text-shadow: 5px 5px 15px var(--grey);
     }
 }
+
+.resume-item-skills-and-technologies{
+    max-width: 20em;
+}
+
+.resume-item-education{
+    max-width: 25em;
+}
