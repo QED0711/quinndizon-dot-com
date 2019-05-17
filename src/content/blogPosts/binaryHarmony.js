@@ -12,6 +12,7 @@ import {
     divImage,
     htmlInsert
  } from '../../js/tags';
+import { callbackify } from 'util';
 
  export default postBox(
      "Structuring Harmony: An Exploration of Binary, Ternary & Greater Structures",
@@ -44,8 +45,8 @@ import {
           'Let\'s consider an example where we choose two PCIs, 2 and 3, represented as a set, (2,3).',
           'We can think of this as a binary set'
       ),
-      heading(2, "Modeling Harmonic Possibilitiese with LIPCSs"),
-     divImage("https://cdn.pixabay.com/photo/2016/04/13/15/04/music-sheet-1327003_960_720.jpg", {backgroundSize: "contain", width: "100%", height: "12em", margin: "0 auto", }),
+     heading(2, "Modeling Harmonic Possibilitiese with LIPCSs"),
+     image("https://cdn.pixabay.com/photo/2016/04/13/15/04/music-sheet-1327003_960_720.jpg", "music image", {width: "100%", maxWidth: "500px", display: "block", margin: "0 auto"}),
      orderedList("Designate a binary set", "Map all sequences of 0 to the set size")
 
  )

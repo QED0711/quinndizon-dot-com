@@ -25,11 +25,9 @@ const renderContent = ({tags}) => {
                 )
             case("div-image"):
                     return(
-                        <div style={{                            
-                            backgroundImage: `url(${content})`,
-                            backgroundRepeat: "no-repeat",
-                            ...tag.settings
-                        }}></div>
+                        <div style={{...tag.settings}}>
+                            <div style={{backgroundImage: `url(${content})`, backgroundSize: tag.settings.backgroundSize || "contain", backgroundRepeat: "no-repeat", height: "100%", width: tag.settings.width || "100%"}}></div>
+                        </div>
                     )
             case("h1"):
                 return <h1 key={i} className="content content-heading-1" style={tag.settings}>{content}</h1>
