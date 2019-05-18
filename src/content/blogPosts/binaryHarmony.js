@@ -10,7 +10,8 @@ import {
     heading,
     image,
     divImage,
-    htmlInsert
+    htmlInsert,
+    codeGist
  } from '../../js/tags';
 import { callbackify } from 'util';
 
@@ -47,6 +48,7 @@ import { callbackify } from 'util';
       ),
      heading(2, "Modeling Harmonic Possibilitiese with LIPCSs"),
      image("https://cdn.pixabay.com/photo/2016/04/13/15/04/music-sheet-1327003_960_720.jpg", "music image", {width: "100%", maxWidth: "500px", display: "block", margin: "0 auto"}),
+     codeGist({id: "911e00f20e7328c0a892a75fc6dcaec0"}),
      orderedList("Designate a binary set", "Map all sequences of 0 to the set size")
 
  )

@@ -72,7 +72,12 @@ const htmlInsert = (content) => {
     }
 }  
 
-
+const codeGist = (content) => {
+    return {
+        type: "gist",
+        content
+    }
+}
 
 
 
@@ -155,6 +160,7 @@ export {
     divImage,
     heading,
     htmlInsert,
+    codeGist,
 
     postBox,
     listenInfoBox,

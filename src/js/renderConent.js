@@ -1,6 +1,8 @@
 
 import React from 'react'
 
+import Gist from 'react-gist';
+
 const renderContent = ({tags}) => {
     return tags.map((tag, i) => {
         const { content } = tag        
@@ -42,7 +44,9 @@ const renderContent = ({tags}) => {
             case("h6"):
                 return <h6 key={i} className="content content-heading-6" style={tag.settings}>{content}</h6>
             case("html"):
-                    return content
+                return content
+            case("gist"):
+                return <Gist id={content.id} file={content.file}/>
         }
     })
 }
