@@ -179,7 +179,7 @@ const RESUME_CONTENT = {
         
         resumeItem(
             "Awards & Achievements",
-            heading(2, "Awards & Achievements"),
+            heading(2, "Notable Awards & Achievements"),
 
             htmlInsert(<hr/>),
 
