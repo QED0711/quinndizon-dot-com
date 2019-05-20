@@ -27,7 +27,7 @@ class BioBox extends Component {
         return(
             <div className="bio-box">
                 {this.state.fullBio ? renderContent(content.fullBio) : renderContent(content.shortBio)}
-                <a id="toggle-full-bio" href="#" onClick={this.toggleFullBio}>Full Bio</a>
+                <p className="bio-version"><a id="toggle-full-bio" href="#" onClick={this.toggleFullBio}>Full Bio</a></p>
             </div>
         )
     }
