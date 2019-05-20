@@ -13,7 +13,9 @@ import {
 
 import {
     headingStyles,
-    textUnitStyle
+    textUnitStyle,
+    indentedSubheadingStyle,
+    indentedParagraphStyle,
 } from './tagStyles';
 
 
@@ -24,23 +26,52 @@ const RESUME_CONTENT = {
         resumeItem(
             "Experience",
             heading(2, "Experience"),
-            paragraph("A classically trained musician with professional experience in education, arts management, and web development."),
+            paragraph("Classically trained musician, with 8+ years professional experience in music education and arts management. Additional 5+ years experience in programming and web development"),
+            
             htmlInsert(<hr/>),
-            heading(4, "Web Developer & Online Course Designer"),
-            heading(5, "University of Maryland, College Park"),
+
+            heading(3, "ONLINE COURSE DESIGNER & WEB DEVELOPER", textUnitStyle),
+            heading(5, "January 2019 - Present", textUnitStyle),
+            heading(4, "University of Maryland College Park", indentedSubheadingStyle),
             unorderedList(
-                "Lead course designer for the univerity's online music fundamentals course.",
-                "Wrote a custom web application to allow instructors to easliy create and grade music assignments",
-                "First run of the course saw more than a 300% increase in enrollment from previous years."
+                "Lead curriculum, assessment, and web developer for the university’s online Music Fundamentals course.",
+                "Created a custom web application to allow instructors to design self-assessing materials to help evaluate learning outcomes.",
+                "First iteration of the online version of the course saw a nearly 300% increase in enrollment from previous years.",
+                textUnitStyle
             ),
+           
+            heading(3, "UNIVERSITY CLASSROOM MUSIC INSTRUCTOR", {margin: "1em 0 0"}),
+            heading(5, "2012 - Present", textUnitStyle),
+            heading(4, "University of Louisville (2012-2015) & University of Maryland (2015-present)", indentedSubheadingStyle),
+            unorderedList(
+                "Instructed and assisted in courses in music theory, aural skills, composition, music technology, and conducting.",
+                "Taught up to four courses a semester, with class sizes 10-13 students.",
+                "Responsible for designing curriculum and assessment materials for full academic years and working with faculty and administration to meet institutional standards and objectives.",
+                textUnitStyle
+            ),
+
+            heading(3, "ARTISTIC DIRECTOR", {margin: "1em 0 0"}),
+            heading(5, "2017 - 2018", textUnitStyle),
+            heading(4, "TEMPO New Music Ensemvle, University of Maryland College Park", indentedSubheadingStyle),
+            unorderedList(
+                "Planned and executed a six-event season consisting of a varity of concerts and interactive sound installations.",
+                "Introduced new strategies for repertoire selection and musician recruitment to ensure that everyone in the organization had ownership over the product.",
+                "Helped create a concert series focused on engaging new audience within the local community.",
+                textUnitStyle
+            ),
+            
+            
             htmlInsert(<hr/>),
         ),
         
+        // ===========================================================================================
         
         resumeItem(
             "Skills and Technologies",
             heading(2, "Skills"),
             
+            htmlInsert(<hr/>),
+
             heading(3, "Soft Skills", textUnitStyle),
             unorderedList(
                 "Creative problem solver",
@@ -144,12 +175,61 @@ const RESUME_CONTENT = {
             
         ),
         
+        // ===========================================================================================
         
-        
+        resumeItem(
+            "Awards & Achievements",
+            heading(2, "Awards & Achievements"),
+
+            htmlInsert(<hr/>),
+
+            heading(3, "M-Cubator Grant Recipient for Music Web Application", textUnitStyle),
+            heading(5, "2019", indentedSubheadingStyle),
+            paragraph(
+                "Awarded the maximum funding requested from the University of Maryland School of Music to develop software to help music students study for score identification exams.",
+                indentedParagraphStyle
+            ),
+           
+            heading(3, "Grand Prize Winner - Walsum Competition", textUnitStyle),
+            heading(5, "2018", indentedSubheadingStyle),
+            paragraph(
+                "Monetary prize and performance of the winning work, \"Dark Nebula\", by the University of Maryland Wind Orchestra",
+                indentedParagraphStyle
+            ),
+
+            heading(3, "University of Maryland Flagship Fellow", textUnitStyle),
+            heading(5, "2015 - 2019", indentedSubheadingStyle),
+            paragraph(
+                "Recipient of the distinguished and highly competative Flaghip Fellowship at the University of Maryland - awarded to only 10 incoming doctoral students per year across all disciplines.",
+                "Fellowship included full tuition and stipend over four years, and no work duties for two years.",
+                indentedParagraphStyle
+            ),
+
+            heading(3, "Grand Prize Winner - PARMA International Student Composer Competition", textUnitStyle),
+            heading(5, "2012", indentedSubheadingStyle),
+            paragraph(
+                "Grand Prize in the inaugural composition competition produced by PARMA Recordings. Winning Work, \"Awakening\", recorded and released on the Navona Label.",
+                indentedParagraphStyle
+            ),
+
+            heading(3, "University of Louisville Bomhard Fellow", textUnitStyle),
+            heading(5, "2011 - 2013", indentedSubheadingStyle),
+            paragraph(
+                "Recipient of the Bomhard Fellowship in composition for showing an aptitude for writing for the human voice.",
+                "Fellowship included full tuition plus stipend.",
+                indentedParagraphStyle
+            ),
+
+        ),
+
+        // ===========================================================================================
+
         resumeItem(
             "Education",
             heading(2, "Education"),
             
+            htmlInsert(<hr/>),
+
             heading(3, "Data Science Bootcamp", textUnitStyle),
             heading(4, "Flatiron School, Washington D.C.", {...textUnitStyle, fontWeight: 500}),
             paragraph("2019", {margin: '0 0 1em'}),
