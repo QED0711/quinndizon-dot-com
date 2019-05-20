@@ -55,19 +55,40 @@ const RESUME_CONTENT = {
             
             htmlInsert(<hr/>),
             
-            heading(3, "Music", textUnitStyle),
+            
+            heading(3, "Music Technologies", textUnitStyle),
             unorderedList(
                 "Composition",
                 "Conducting",
                 "Arranging",
                 "Engraving",
+                "Recording, mixing & mastering",
                 
                 textUnitStyle
+                ),
+
+                heading(3, "Music & Audio", textUnitStyle),
+                heading(5, "Notation Software", {...textUnitStyle, marginLeft: "1em"}),
+                unorderedList(
+                    "Sibelius",
+                    "Dorico",                
+                    textUnitStyle
+                ),
+                heading(5, "Recording Software", {...textUnitStyle, marginLeft: "1em"}),
+                unorderedList(
+                    "Pro Tools",
+                    "Logic",                
+                    textUnitStyle
+                ),
+                heading(5, "Other", {...textUnitStyle, marginLeft: "1em"}),
+                unorderedList(
+                    "Max MSP",                
+                    textUnitStyle
                 ),
                 
             htmlInsert(<hr/>),
                 
-            heading(3, "Technologies", textUnitStyle),
+            heading(3, "Web Technologies", textUnitStyle),
             
             heading(4, "Javascript", {margin: "1em 0 0"}),
             unorderedList(
