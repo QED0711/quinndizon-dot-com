@@ -34,13 +34,11 @@
     from{
         background-color: var(--dark1);
         color: var(--light1);
-        font-weight: 300;
     }
     to{
         background-color: var(--light1); 
         color: var(--dark1);
         letter-spacing: .35em;
-        font-weight: 800;
         border-color: var(--dark1);
         box-shadow: 1px 1px 5px var(--grey) inset;
         text-shadow: 2px 2px 5px var(--grey); 

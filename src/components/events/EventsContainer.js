@@ -14,7 +14,13 @@ class EventsContainer extends Component {
             <div className="events-container content-container sliding-container">
                 <TitleBox title={EVENTS_CONTENT.title} />
 
-                <EventInfoBoxes events={EVENTS_CONTENT.events} />
+                {
+                    EVENTS_CONTENT.events.length > 0 ? 
+                    <EventInfoBoxes events={EVENTS_CONTENT.events} />
+                    :
+                    <p>{EVENTS_CONTENT.placeholderMessage}</p>
+                }
+
             </div>
         )
     }
