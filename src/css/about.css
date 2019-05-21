@@ -2,8 +2,27 @@
 
 .bio-box{
     text-align: left;
+    min-height: 20em;
 }
 
 .bio-version{
-    text-align: center;
+    /* text-align: center; */
+}
+
+.headshot-image{
+    width: 100%;
+    max-width: 12em;
+    border-radius: 10px;
+    float: left;
+    
+    margin: 1em 1em 0;
+}
+
+@media only screen and (max-width: 550px){
+    .headshot-image{
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
