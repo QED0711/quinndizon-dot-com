@@ -20,6 +20,7 @@ import scorestudyTablet from '../media/projects/scorestudy/tablet.JPG'
 import scorestudyMobile from '../media/projects/scorestudy/mobile.JPG'
 
 import cssComponentManagerDesktop from '../media/projects/cssComponentManager/Desktop.JPG'
+import cssGitChecklistDesktop from '../media/projects/git-checklist/desktop.png'
 
 const PROJECTS_CONTENT = {
 
@@ -141,7 +142,7 @@ const PROJECTS_CONTENT = {
             ],
             "https://github.com/QED0711/git-checklist",
             null,
-            null,
+            cssGitChecklistDesktop,
             null,
             null,
             "Video"
