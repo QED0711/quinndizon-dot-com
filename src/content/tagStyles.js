@@ -20,5 +20,5 @@ export {
     headingStyles,
     textUnitStyle,
     indentedSubheadingStyle,
-    indentedParagraphStyle
+    indentedParagraphStyle,
 }

@@ -12,8 +12,8 @@ import {
     divImage,
     htmlInsert,
     codeGist
- } from '../../js/tags';
-import { callbackify } from 'util';
+} from '../../js/tags';
+
 
  export default postBox(
      "Structuring Harmony: An Exploration of Binary, Ternary & Greater Structures",
