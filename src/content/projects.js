@@ -195,22 +195,21 @@ const PROJECTS_CONTENT = {
                 heading(2, "Wiki Graph", {textAlign: 'center'}), 
                 heading(5, "2018", {textAlign: 'center', margin: 0}), 
                 paragraph(
-                    "An electron desktop application to help users plan and manage their git workflow from a simple UI. Helps to encourage simple task completion and regular commits."
+                    "An educational CLI to help users understand and form connections among topics in wikipedia articles"
                 ),
                 htmlInsert(<hr/>),
                 heading(3, "Technologies"),
-                unorderedList("JS + Electron"),
+                unorderedList("Ruby Gem"),
                 htmlInsert(<hr/>),
                 heading(3, "Features"),
                 unorderedList(
-                    "Users can point the application to any git initialized project. If there is no .gitchecklist file present, it will create one.",
-                    "In a project's .gitchecklist file, users can store and track the completion of project goals",
-                    "In the UI, users can checkoff completed tasks and have commits automatically generated for each completed itam"
+                    "Ruby + Nokogiri web scraper searches wikipedia articles and finds the most linked to topics",
+                    "Returns a list of the top 10 most relevant topics from the user defined article"
                 ),
             ],
-            "https://github.com/QED0711/git-checklist",
+            "https://github.com/QED0711/wiki_graph-cli-app",
             null,
-            cssGitChecklistDesktop,
+            null,
             null,
             null,
             "Video",
