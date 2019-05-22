@@ -153,6 +153,66 @@ const PROJECTS_CONTENT = {
         ),
 
         // ==========================================================================================================
+        
+        projectInfoBox(
+            "Craigslist Notifier",
+            [
+                heading(2, "Craigslist Notifier", {textAlign: 'center'}), 
+                heading(5, "2018", {textAlign: 'center', margin: 0}), 
+                paragraph(
+                    "An electron desktop application to help users plan and manage their git workflow from a simple UI. Helps to encourage simple task completion and regular commits."
+                ),
+                htmlInsert(<hr/>),
+                heading(3, "Technologies"),
+                unorderedList("JS + Electron"),
+                htmlInsert(<hr/>),
+                heading(3, "Features"),
+                unorderedList(
+                    "Users can point the application to any git initialized project. If there is no .gitchecklist file present, it will create one.",
+                    "In a project's .gitchecklist file, users can store and track the completion of project goals",
+                    "In the UI, users can checkoff completed tasks and have commits automatically generated for each completed itam"
+                ),
+            ],
+            "https://github.com/QED0711/git-checklist",
+            null,
+            cssGitChecklistDesktop,
+            null,
+            null,
+            "Video",
+            ["rails", 'heroku']
+        ),
+
+        // ==========================================================================================================
+        
+        projectInfoBox(
+            "Wiki Graph",
+            [
+                heading(2, "Wiki Graph", {textAlign: 'center'}), 
+                heading(5, "2018", {textAlign: 'center', margin: 0}), 
+                paragraph(
+                    "An electron desktop application to help users plan and manage their git workflow from a simple UI. Helps to encourage simple task completion and regular commits."
+                ),
+                htmlInsert(<hr/>),
+                heading(3, "Technologies"),
+                unorderedList("JS + Electron"),
+                htmlInsert(<hr/>),
+                heading(3, "Features"),
+                unorderedList(
+                    "Users can point the application to any git initialized project. If there is no .gitchecklist file present, it will create one.",
+                    "In a project's .gitchecklist file, users can store and track the completion of project goals",
+                    "In the UI, users can checkoff completed tasks and have commits automatically generated for each completed itam"
+                ),
+            ],
+            "https://github.com/QED0711/git-checklist",
+            null,
+            cssGitChecklistDesktop,
+            null,
+            null,
+            "Video",
+            ["ruby"]
+        ),
+
+        // ==========================================================================================================
 
         // projectInfoBox(
         //     "Personal Website",

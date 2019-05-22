@@ -10,6 +10,9 @@ import nodeBadge from '../../media/projects/icons/node.svg';
 import electronBadge from '../../media/projects/icons/electron.svg';
 import githubBadge from '../../media/projects/icons/github.svg';
 import cssBadge from '../../media/projects/icons/css.svg';
+import rubyBadge from '../../media/projects/icons/ruby.svg';
+import railsBadge from '../../media/projects/icons/rails.svg';
+import herokuBadge from '../../media/projects/icons/heroku.svg';
 
 const ProjectInfo = ({project}) => {
 
@@ -27,7 +30,9 @@ const ProjectInfo = ({project}) => {
         electron: electronBadge,
         github: githubBadge, 
         css: cssBadge, 
-        // electron: electronIcon 
+        ruby: rubyBadge, 
+        rails: railsBadge, 
+        heroku: herokuBadge, 
     }
 
     const renderIconDiv = (techBadges) => {
