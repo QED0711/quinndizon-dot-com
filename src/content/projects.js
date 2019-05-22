@@ -53,7 +53,8 @@ const PROJECTS_CONTENT = {
             mtportalDesktop,
             mtportalTablet,
             mtportalMobile,
-            "Video"
+            null,
+            ['react', "github"],
         ),
 
         // ==========================================================================================================
@@ -86,7 +87,8 @@ const PROJECTS_CONTENT = {
             scorestudyDesktop,
             scorestudyTablet,
             scorestudyMobile,
-            "Video"
+            "Video",
+            ['node', 'jquery', 'bootstrap', 'github']
         ),
 
         // ==========================================================================================================
@@ -116,7 +118,8 @@ const PROJECTS_CONTENT = {
             cssComponentManagerDesktop,
             null,
             null,
-            "Video"
+            "Video",
+            ["electron", 'css']
         ),
 
         // ==========================================================================================================
@@ -145,7 +148,8 @@ const PROJECTS_CONTENT = {
             cssGitChecklistDesktop,
             null,
             null,
-            "Video"
+            "Video",
+            ["electron", 'github']
         ),
 
         // ==========================================================================================================

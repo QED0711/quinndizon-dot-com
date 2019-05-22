@@ -111,7 +111,7 @@ const listenInfoBox = (title, subtitle, imageUrl, scoreSrc, scTrackId) => {
 
 const soundcloudFrame = (trackId) => {
     return(
-        <iframe width="100%" height="auto" scrolling="no" frameBorder="no" allow="autoplay" src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${trackId}&amp;color=%23EAE4D5&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=true&amp;visual=false&amp;show_artwork=false`}></iframe>
+        <iframe width="100%" height="auto" scrolling="no" frameBorder="no" allow="autoplay" src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${trackId}&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false&amp;show_teaser=true&amp;visual=false&amp;show_artwork=false`}></iframe>
     )
 }
 
@@ -121,7 +121,7 @@ const scoreFrame = (src) => {
     )
 }
 
-const projectInfoBox = (title, tags, githubLink = null, websiteLink = null, laptopImage = null, tabletImage = null, mobileImage = null, demoVideo = null) => {
+const projectInfoBox = (title, tags, githubLink = null, websiteLink = null, laptopImage = null, tabletImage = null, mobileImage = null, demoVideo = null, techBadges=[]) => {
     return {
         title,
         tags,
@@ -130,7 +130,8 @@ const projectInfoBox = (title, tags, githubLink = null, websiteLink = null, lapt
         laptopImage,
         tabletImage,
         mobileImage,
-        demoVideo
+        demoVideo,
+        techBadges
     }
 }
 
