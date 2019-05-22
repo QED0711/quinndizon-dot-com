@@ -36,7 +36,6 @@ const ProjectInfo = ({project}) => {
     }
 
     const renderIconDiv = (techBadges) => {
-        console.log(techBadges)
         return techBadges.map((badge, i) => {
             return(
                 <div key={i} className="project-tech-badge" style={{backgroundImage: `url(${badgeList[badge]})`}}></div>
