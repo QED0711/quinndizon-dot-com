@@ -43,7 +43,7 @@ const ProjectInfo = ({project}) => {
         
         <Link to={`/projects/${parseTitle(project.title)}`} className="content-selector-link">
             <div className="project-info content-card content-selector-card">
-                    <h3 className="project-title">{project.title}</h3>
+                    <h2 className="project-title">{project.title}</h2>
                     {renderIconDiv(project.techBadges)}
             </div>
         </Link>
