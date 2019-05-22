@@ -6,7 +6,29 @@
     min-height: 45em;
 }
 
-/* .listen-info-box{
-    background-color: var(--light1);
+.listen-info-box{
+    background-size: cover;
+    background-repeat: no-repeat;
     color: var(--dark2);
-} */
+
+    padding: 0;
+}
+
+.listen-info-box-image-cover{
+    background-color: rgba(0, 0, 0, 0.50);
+    color: var(--light1) !important;
+}
+
+.listen-info-box-image-cover:hover{
+    animation-name: image-cover;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes image-cover{ 
+    to{
+        background-color: rgba(255, 255, 255, 0.25);
+        color: var(--dark2);
+        letter-spacing: 0.1em;
+    }
+}
