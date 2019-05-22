@@ -22,6 +22,10 @@ import scorestudyMobile from '../media/projects/scorestudy/mobile.JPG'
 import cssComponentManagerDesktop from '../media/projects/cssComponentManager/Desktop.JPG'
 import cssGitChecklistDesktop from '../media/projects/git-checklist/desktop.png'
 
+import craigslistNotifierDesktop from '../media/projects/craigslistNotifier/desktop.JPG'
+import craigslistNotifierTablet from '../media/projects/craigslistNotifier/tablet.JPG'
+import craigslistNotifierMobile from '../media/projects/craigslistNotifier/mobile.JPG'
+
 const PROJECTS_CONTENT = {
 
     title: "Projects",
@@ -160,24 +164,25 @@ const PROJECTS_CONTENT = {
                 heading(2, "Craigslist Notifier", {textAlign: 'center'}), 
                 heading(5, "2018", {textAlign: 'center', margin: 0}), 
                 paragraph(
-                    "An electron desktop application to help users plan and manage their git workflow from a simple UI. Helps to encourage simple task completion and regular commits."
+                    "A fullstack Rails app to track Craigslist searches and notify users of new listings when they are posted"
                 ),
                 htmlInsert(<hr/>),
                 heading(3, "Technologies"),
-                unorderedList("JS + Electron"),
+                unorderedList("Rails + JS", "Deployed on Heroku"),
                 htmlInsert(<hr/>),
                 heading(3, "Features"),
                 unorderedList(
-                    "Users can point the application to any git initialized project. If there is no .gitchecklist file present, it will create one.",
-                    "In a project's .gitchecklist file, users can store and track the completion of project goals",
-                    "In the UI, users can checkoff completed tasks and have commits automatically generated for each completed itam"
+                    "Rails backend application with JS frontend functionality",
+                    "Monitors and notifies users of relevant craigslist listings within minutes of them being posted",
+                    "Uses the Delayed Jobs gem to regularly scrape user defined Craigslist listings and sends notifications via action mailer",
+                    "Deployed on Heroku with postgresql database"
                 ),
             ],
-            "https://github.com/QED0711/git-checklist",
-            null,
-            cssGitChecklistDesktop,
-            null,
-            null,
+            "https://github.com/QED0711/craigslist-notifier",
+            "http://qed-clnotifier.herokuapp.com/",
+            craigslistNotifierDesktop,
+            craigslistNotifierTablet,
+            craigslistNotifierMobile,
             "Video",
             ["rails", 'heroku']
         ),
