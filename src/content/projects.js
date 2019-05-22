@@ -26,6 +26,8 @@ import craigslistNotifierDesktop from '../media/projects/craigslistNotifier/desk
 import craigslistNotifierTablet from '../media/projects/craigslistNotifier/tablet.JPG'
 import craigslistNotifierMobile from '../media/projects/craigslistNotifier/mobile.JPG'
 
+import wikiGraphDesktop from '../media/projects/wikiGraph/desktop.JPG'
+
 const PROJECTS_CONTENT = {
 
     title: "Projects",
@@ -209,7 +211,7 @@ const PROJECTS_CONTENT = {
             ],
             "https://github.com/QED0711/wiki_graph-cli-app",
             null,
-            null,
+            wikiGraphDesktop,
             null,
             null,
             "Video",
