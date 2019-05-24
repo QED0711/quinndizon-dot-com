@@ -13,7 +13,6 @@ const ResumeContainer = () => {
     let names = RESUME_CONTENT.items.map(item => item.name)
     
     let [resumeItem, setResumeItem] = useState(names[0]);
-    let [resumeVersion, setResumeVersion] = useState('programming')
 
     let content = RESUME_CONTENT.items.filter(item => item.name === resumeItem)[0]
     
@@ -23,7 +22,7 @@ const ResumeContainer = () => {
             
             <TitleBox title={RESUME_CONTENT.title} />            
 
-            <a href="#">View as PDF</a>
+            {/* <a href="#">View as PDF</a> */}
 
             <ResumeButtonGroup names={names} setResumeItem={setResumeItem} />
             <SelectedResumeContent content={content} />
