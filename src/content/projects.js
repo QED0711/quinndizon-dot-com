@@ -192,9 +192,9 @@ const PROJECTS_CONTENT = {
         // ==========================================================================================================
         
         projectInfoBox(
-            "Wiki Graph",
+            "Wiki Graph CLI",
             [
-                heading(2, "Wiki Graph", {textAlign: 'center'}), 
+                heading(2, "Wiki Graph CLI", {textAlign: 'center'}), 
                 heading(5, "2018", {textAlign: 'center', margin: 0}), 
                 paragraph(
                     "An educational CLI to help users understand and form connections among topics in wikipedia articles"
