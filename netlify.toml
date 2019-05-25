@@ -1,4 +1,3 @@
 [build]
-base="quinndizon-dot-com"
 publish="build/"
 command="npm run build"
