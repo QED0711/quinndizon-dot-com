@@ -16,9 +16,17 @@ const indentedParagraphStyle = {
     marginLeft: "1.5em",
 }
 
+const imageTagStyle = {
+    width: "100%", 
+    maxWidth: "500px", 
+    display: "block", 
+    margin: "0 auto"
+}
+
 export {
     headingStyles,
     textUnitStyle,
     indentedSubheadingStyle,
     indentedParagraphStyle,
+    imageTagStyle,
 }
