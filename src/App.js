@@ -34,8 +34,8 @@ import './css/inner-content-body.css'
 import './css/contact-form.css'
 import './css/blog-post.css'
 
-class App extends Component {
-  render() {
+const App = () => {
+
     return (
       <BrowserRouter>
         <div className="App">
@@ -43,28 +43,28 @@ class App extends Component {
           <NavContainer />
         
           
-          <Route path="/" exact component={AboutContainer} />
+          <Route path="/about" exact component={AboutContainer} />
           <Route path="/events" component={EventsContainer} />
           
-          <Route path="/listen" exact component={ListenContainer} />
+          <Route path="/listen" component={ListenContainer} />
           <Route path="/listen/:work" component={ListenContainer} />
 
 
-          <Route path="/projects" exact component={ProjectsContainer} />
+          <Route path="/projects" component={ProjectsContainer} />
           <Route path="/projects/:project" component={ProjectsContainer} />
           
           <Route path="/resume" component={ResumeContainer} />
           <Route path="/contact" component={ContactContainer} />
           
-          <Route path="/blog" exact component={BlogContainer} />
-          <Route path="/blog/:post" exact component={BlogPostContainer} />
+          <Route path="/blog" component={BlogContainer} />
+          <Route path="/blog/:post" component={BlogPostContainer} />
           
 
 
         </div>
       </BrowserRouter>
     );
-  }
+
 }
 
 export default App;
