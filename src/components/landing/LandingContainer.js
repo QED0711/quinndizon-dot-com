@@ -2,11 +2,14 @@ import React from 'react';
 
 import LandingText from './LandingText'
 
+import landingImage from '../../media/landingImage.jpg'
+
+
 const LandingContainer = () => {
 
     return(
-        <div className="landing-container">
-            <LandingText />
+        <div className="landing-container" style={{backgroundImage: `url(${landingImage})`}}>
+                <LandingText />
         </div>
     )
 }

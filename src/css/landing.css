@@ -2,7 +2,6 @@
 
 .landing-container{
     height: 30em;
-    background-image: url("https://images.pexels.com/photos/616852/pexels-photo-616852.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: calc(100% - 8em);
