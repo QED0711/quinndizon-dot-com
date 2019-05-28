@@ -34,7 +34,7 @@ export default postBox(
      "An introduction to my theories and use of N Harmonic Structures",
      
     heading(2, "Overview"),
-    paragraph("In this brief post, I will introduce the concepts of N Hrmmonic Sctructures, and discuss how and why I developed this approach to harmonic organization."),  
+    paragraph("In this brief post, I will introduce the concepts of N Harmony and discuss how this approach leads to several interesting possibilities for harmonic organization."),  
     htmlInsert(<p><em><strong>Note:</strong> this post assumes some basic knowledge of musical set-theory.</em></p>),
     
     htmlInsert(<hr/>),
