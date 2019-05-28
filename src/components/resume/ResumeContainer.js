@@ -1,12 +1,11 @@
 import React, { useState} from 'react';
-import { Link } from 'react-router-dom';
 // CONTENT
 import RESUME_CONTENT from '../../content/resume';
 
 // COMPONENTS
-import { TitleBox, ResumeButton } from '../elements/stateless';
+import { TitleBox,} from '../elements/stateless';
 import ResumeButtonGroup from './ResumeButtonGroup'
-import PDFLink from './PDFLink';
+// import PDFLink from './PDFLink';
 import SelectedResumeContent from './SelectedResumeContent';
 
 const ResumeContainer = () => {

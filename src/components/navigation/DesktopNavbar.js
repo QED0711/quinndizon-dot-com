@@ -7,7 +7,7 @@ class DesktopNavbar extends Component {
         return(
             <nav className="desktop-navbar navbar">
                 <div className="nav-item desktop-nav-item">
-                    <Link to="/about">About</Link>
+                    <Link to="/">About</Link>
                 </div>
                 <div className="nav-item desktop-nav-item">
                     <Link to="/events">Events</Link>

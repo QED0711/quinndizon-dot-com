@@ -19,7 +19,7 @@ const MobileNavbar = () => {
             </div>
             <nav className={`mobile-navbar navbar mobile-nav-visible-${navVisible}`} onClick={handleClick}>
                 <div className="mobile-nav-item nav-item">
-                    <Link to="/about">About</Link>
+                    <Link to="/">About</Link>
                 </div>
                 <div className="mobile-nav-item nav-item">
                     <Link to="/events">Events</Link>

@@ -43,20 +43,20 @@ const App = () => {
           <NavContainer />
         
           
-          <Route path="/about" component={AboutContainer} />
+          <Route path="/" exact component={AboutContainer} />
           <Route path="/events" component={EventsContainer} />
           
-          <Route path="/listen" component={ListenContainer} />
+          <Route path="/listen" exact component={ListenContainer} />
           <Route path="/listen/:work" component={ListenContainer} />
 
 
-          <Route path="/projects" component={ProjectsContainer} />
+          <Route path="/projects" exact component={ProjectsContainer} />
           <Route path="/projects/:project" component={ProjectsContainer} />
           
           <Route path="/resume" component={ResumeContainer} />
           <Route path="/contact" component={ContactContainer} />
           
-          <Route path="/blog" component={BlogContainer} />
+          <Route path="/blog" exact component={BlogContainer} />
           <Route path="/blog/:post" component={BlogPostContainer} />
           
 
