@@ -39,7 +39,7 @@ const PROJECTS_CONTENT = {
             [
                 heading(2, "Music Theory Portal", {textAlign: 'center'}), 
                 heading(5, "2019", {textAlign: 'center', margin: 0}), 
-                paragraph("A music theory assignment creation and grading tool for use in traditional and fliped classroom theory courses.", "Designed originally for the University of Maryland, School of Music, but freely available for all music theory students and instructors."),
+                paragraph("A music theory assignment creation and grading tool for use in traditional and flipped classroom theory courses.", "Designed originally for the University of Maryland, School of Music, but freely available for all music theory students and instructors."),
                 htmlInsert(<hr/>),
                 heading(3, "Technologies"),
                 unorderedList("React", "Noteflight Client API", "gh-pages"),
@@ -73,7 +73,7 @@ const PROJECTS_CONTENT = {
                 paragraph(
                     "A fullstack study tool and web scraping app built to help music students study for score identification exams.", 
                     "I originally designed the application as a study tool for myself and my colleagues to help us study for the doctoral comprehensive exams at UMD.",
-                    "In 2019, it received a M-Cubator grant award from the UMD School of Music to update the functionality to allow user accounts, and user sourced rankings of study materials.",
+                    "In 2019, it received a M-Cubator grant award from the UMD School of Music to update the functionality to allow user accounts and user sourced rankings of study materials.",
                     "Updated version to be posted Fall of 2019."
                 ),
                 htmlInsert(<hr/>),

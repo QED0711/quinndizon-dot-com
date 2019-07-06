@@ -26,7 +26,7 @@ const RESUME_CONTENT = {
         resumeItem(
             "Experience",
             heading(2, "Experience"),
-            paragraph("Classically trained musician, with 8+ years professional experience in music education and arts management. Additional 5+ years experience in programming and web development"),
+            paragraph("Classically trained musician with 8+ years professional experience in music education and arts management. Additional 5+ years experience in programming, web development, and data science"),
             
             htmlInsert(<hr/>),
 
@@ -145,9 +145,17 @@ const RESUME_CONTENT = {
                 textUnitStyle
             ),
             
+            heading(4, "Data Science", {margin: "1em 0 0"}),
+            unorderedList(
+                "Python",
+                "Numpy + Pandas",
+                textUnitStyle
+            ),
+
             heading(4, "Databases", {margin: "1em 0 0"}),
             unorderedList(
                 "SQL",
+                "Mongo DB",
                 "GraphQL",
                 textUnitStyle
             ),
