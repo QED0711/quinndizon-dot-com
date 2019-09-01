@@ -11,6 +11,10 @@ import {
 } from '../js/tags'
 
 
+import soTagDesktop from '../media/projects/SOTagPredictor/desktop.png'
+import soTagTablet from '../media/projects/SOTagPredictor/tablet.png'
+import soTagMobile from '../media/projects/SOTagPredictor/mobile.png'
+
 import mtportalDesktop from '../media/projects/mtportal/desktop.JPG'
 import mtportalTablet from '../media/projects/mtportal/tablet.JPG'
 import mtportalMobile from '../media/projects/mtportal/mobile.JPG'
@@ -33,6 +37,32 @@ const PROJECTS_CONTENT = {
     title: "Projects",
 
     projects: [
+
+        projectInfoBox(
+            "Stack Overflow Predictor",
+            [
+                heading(2, "Stack Overflow Tag Predictor", {textAlign: 'center'}), 
+                heading(5, "2019", {textAlign: 'center', margin: 0}), 
+                paragraph("A web app that uses natural language processing, text vectorization, and machine learning models to predict the primary language tag of a Stack Overflow post."),
+                htmlInsert(<hr/>),
+                heading(3, "Technologies"),
+                unorderedList("Python", "Scikit-Learn", "Flask", "React"),
+                htmlInsert(<hr/>),
+                heading(3, "Features"),
+                unorderedList(
+                    "Uses Natural Language Processing (NLP) to determine the topic from raw post text.",
+                    "Achieved ~82% accuracy over five language tags (python, javascript, java, C#, C++)",
+                    "The best performing model (logistic regression) is deployed to a Flask backend with a React frontend UI.",
+                ),
+            ],
+            "https://github.com/QED0711/stack_overflow_nlp",
+            "https://tag-predictor.netlify.com/",
+            soTagDesktop,
+            soTagTablet,
+            soTagMobile,
+            null,
+            ['python', 'sklearn', 'flask', 'react'],
+        ),
 
         projectInfoBox(
             "Music Theory Portal",

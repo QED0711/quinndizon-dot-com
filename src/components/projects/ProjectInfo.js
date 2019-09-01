@@ -13,6 +13,9 @@ import cssBadge from '../../media/projects/icons/css.svg';
 import rubyBadge from '../../media/projects/icons/ruby.svg';
 import railsBadge from '../../media/projects/icons/rails.svg';
 import herokuBadge from '../../media/projects/icons/heroku.svg';
+import pythonBadge from '../../media/projects/icons/python.svg';
+import sklearnBadge from '../../media/projects/icons/sklearn.svg';
+import flaskBadge from '../../media/projects/icons/flask.svg';
 
 const ProjectInfo = ({project}) => {
 
@@ -33,6 +36,9 @@ const ProjectInfo = ({project}) => {
         ruby: rubyBadge, 
         rails: railsBadge, 
         heroku: herokuBadge, 
+        python: pythonBadge,
+        sklearn: sklearnBadge,
+        flask: flaskBadge,
     }
 
     const renderIconDiv = (techBadges) => {
