@@ -32,14 +32,14 @@ const LISTEN_CONTENT = {
             "https://drive.google.com/file/d/0B8TgLmq2pHPvSGF4QU1fWXVRcGs/preview",
             223519244,
         ),
-        listenInfoBox(
-            "12 Haiku",
-            "an orchestral song cycle",
-            "https://images.pexels.com/photos/46253/mt-fuji-sea-of-clouds-sunrise-46253.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-            "https://drive.google.com/file/d/0B8TgLmq2pHPvamh1UWg4TDdoczA/preview",
-            "Audio Coming Soon",
-            {backgroundPositionY: "-200px"}
-        ),
+        // listenInfoBox(
+        //     "12 Haiku",
+        //     "an orchestral song cycle",
+        //     "https://images.pexels.com/photos/46253/mt-fuji-sea-of-clouds-sunrise-46253.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        //     "https://drive.google.com/file/d/0B8TgLmq2pHPvamh1UWg4TDdoczA/preview",
+        //     "Audio Coming Soon",
+        //     {backgroundPositionY: "-200px"}
+        // ),
         listenInfoBox(
             "Concertante",
             "for orchestra",
