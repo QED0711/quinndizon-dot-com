@@ -44,7 +44,7 @@ const App = () => {
         
           
           <Route path="/" exact component={AboutContainer} />
-          <Route path="/events" component={EventsContainer} />
+          {/* <Route path="/events" component={EventsContainer} /> */}
           
           <Route path="/listen" exact component={ListenContainer} />
           <Route path="/listen/:work" component={ListenContainer} />

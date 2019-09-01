@@ -21,9 +21,9 @@ const MobileNavbar = () => {
                 <div className="mobile-nav-item nav-item">
                     <Link to="/">About</Link>
                 </div>
-                <div className="mobile-nav-item nav-item">
+                {/* <div className="mobile-nav-item nav-item">
                     <Link to="/events">Events</Link>
-                </div>
+                </div> */}
                 <div className="mobile-nav-item nav-item">
                     <Link to="/listen">Listen</Link>
                 </div>

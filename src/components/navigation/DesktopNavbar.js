@@ -9,9 +9,9 @@ class DesktopNavbar extends Component {
                 <div className="nav-item desktop-nav-item">
                     <Link to="/">About</Link>
                 </div>
-                <div className="nav-item desktop-nav-item">
+                {/* <div className="nav-item desktop-nav-item">
                     <Link to="/events">Events</Link>
-                </div>
+                </div> */}
                 <div className="nav-item desktop-nav-item">
                     <Link to="/listen">Listen</Link>
                 </div>
