@@ -1,5 +1,6 @@
 /* 
-This is a script to be run via the command line that will compile markdown into javascript
+This is a script to be run via the command line that will compile markdown into javascript.
+This must be run every time a change is made to a markdown file to recompile it for deployment
 */
 
 const fs = require("fs")

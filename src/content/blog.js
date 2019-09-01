@@ -1,12 +1,15 @@
 import { postBox } from '../js/tags'
 
+/* 
+IMPORTANT! 
+Make sure to run `node compileMarkdown` if you make any changes to a markdown blog post file. Otherwise, those changes will not be reflected here. 
+*/
+
 // BLOG POSTS
 // import binaryHarmony from './blogPosts/binaryHarmony';
 
 // Import blog posts here in the format shown below
-const testContent = require('./blogPosts/json/TEST.json').content
-const newTestContent = require('./blogPosts/json/newTest.json').content
-
+const matplotlibSubplotsContent = require('./blogPosts/json/matplotlibSubplots.json').content
 
 const BLOG_CONTENT = {
     title: "Blog",
@@ -14,18 +17,11 @@ const BLOG_CONTENT = {
     posts: [
         // add postBox for each post, including title, date, and summary
         postBox(
-            "TEST",
-            "DATE",
-            "SUMMARY",
-            testContent
+            "Subplots in Matplotlib",
+            "July 8, 2019",
+            "A guide and tool for planning your plots",
+            matplotlibSubplotsContent
         ),
-
-        postBox(
-            "new test",
-            "Date",
-            "summary",
-            newTestContent
-        )
     ]
 }
 
