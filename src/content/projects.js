@@ -46,13 +46,13 @@ const PROJECTS_CONTENT = {
                 paragraph("A web app that uses natural language processing, text vectorization, and machine learning models to predict the primary language tag of a Stack Overflow post."),
                 htmlInsert(<hr/>),
                 heading(3, "Technologies"),
-                unorderedList("Python", "Scikit-Learn", "Flask", "React"),
+                unorderedList("Python", "Scikit-Learn", "Flask + Heroku", "React + Netlify"),
                 htmlInsert(<hr/>),
                 heading(3, "Features"),
                 unorderedList(
                     "Uses Natural Language Processing (NLP) to determine the topic from raw post text.",
                     "Achieved ~82% accuracy over five language tags (python, javascript, java, C#, C++)",
-                    "The best performing model (logistic regression) is deployed to a Flask backend with a React frontend UI.",
+                    "The best performing model (logistic regression) is deployed to a Flask backend API with a React frontend UI. Backend deployed to heroku, front end deployed to netlify.",
                 ),
             ],
             "https://github.com/QED0711/stack_overflow_nlp",
@@ -61,7 +61,7 @@ const PROJECTS_CONTENT = {
             soTagTablet,
             soTagMobile,
             null,
-            ['python', 'sklearn', 'flask', 'react'],
+            ['python', 'sklearn', 'flask', 'react', 'heroku', 'netlify'],
         ),
 
         projectInfoBox(
