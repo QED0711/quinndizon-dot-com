@@ -26,23 +26,23 @@ const RESUME_CONTENT = {
         resumeItem(
             "Experience",
             heading(2, "Experience"),
-            paragraph("Classically trained musician with 8+ years professional experience in music education and arts management. Additional 5+ years experience in programming, web development, and data science"),
+            paragraph("Programmer with experience in full stack web development, machine learning,  data engineering, and statistical analysis. Background in audio engineering, music theory and composition, university level music education, and arts management. Have designed and deployed educational software currently used in university music courses."),
             
             htmlInsert(<hr/>),
 
-            heading(3, "ONLINE COURSE DESIGNER & WEB DEVELOPER", textUnitStyle),
+            heading(3, "Application Developer, Online Course Designer", textUnitStyle),
             heading(5, "January 2019 - Present", textUnitStyle),
             heading(4, "University of Maryland College Park", indentedSubheadingStyle),
             unorderedList(
-                "Lead curriculum, assessment, and web developer for the university’s online Music Fundamentals course.",
-                "Created a custom web application to allow instructors to design self-assessing materials to help evaluate learning outcomes.",
-                "First iteration of the online version of the course saw a nearly 300% increase in enrollment from previous years.",
+                "Designed and deployed a web app that allows instructors to automate more than 80% of their grading duties.",
+                "Updated curriculum for a music analysis course to work in an online format and in 1/5th the normal course runtime.",
+                "The updated online course saw a 300%+ increase in enrollment from previous in-person versions.",
                 textUnitStyle
             ),
            
             heading(3, "UNIVERSITY CLASSROOM MUSIC INSTRUCTOR", {margin: "1em 0 0"}),
             heading(5, "2012 - Present", textUnitStyle),
-            heading(4, "University of Louisville (2012-2015) & University of Maryland (2015-present)", indentedSubheadingStyle),
+            heading(4, "University of Louisville (2011-2015) & University of Maryland (2015-present)", indentedSubheadingStyle),
             unorderedList(
                 "Instructed and assisted in courses in music theory, aural skills, composition, music technology, and conducting.",
                 "Taught up to four courses a semester, with class sizes 10-13 students.",
@@ -60,8 +60,6 @@ const RESUME_CONTENT = {
                 textUnitStyle
             ),
             
-            
-            htmlInsert(<hr/>),
         ),
         
         // ===========================================================================================
@@ -71,55 +69,8 @@ const RESUME_CONTENT = {
             heading(2, "Skills"),
             
             htmlInsert(<hr/>),
-
-            heading(3, "Soft Skills", textUnitStyle),
-            unorderedList(
-                "Creative problem solver",
-                "Self directed learner",
-                "Well organized",
-                "Leadership & team experience",
-                "Excellent time management",
-                "Self starter",
-                textUnitStyle
-            ),
-            
-            
-            htmlInsert(<hr/>),
-            
-            
-            heading(3, "Music Technologies", textUnitStyle),
-            unorderedList(
-                "Composition",
-                "Conducting",
-                "Arranging",
-                "Engraving",
-                "Recording, mixing & mastering",
                 
-                textUnitStyle
-                ),
-
-                heading(3, "Music & Audio", textUnitStyle),
-                heading(5, "Notation Software", {...textUnitStyle, marginLeft: "1em"}),
-                unorderedList(
-                    "Sibelius",
-                    "Dorico",                
-                    textUnitStyle
-                ),
-                heading(5, "Recording Software", {...textUnitStyle, marginLeft: "1em"}),
-                unorderedList(
-                    "Pro Tools",
-                    "Logic",                
-                    textUnitStyle
-                ),
-                heading(5, "Other", {...textUnitStyle, marginLeft: "1em"}),
-                unorderedList(
-                    "Max MSP",                
-                    textUnitStyle
-                ),
-                
-            htmlInsert(<hr/>),
-                
-            heading(3, "Web Technologies", textUnitStyle),
+            heading(3, "Programming", textUnitStyle),
             
             heading(4, "Javascript", {margin: "1em 0 0"}),
             unorderedList(
@@ -128,6 +79,18 @@ const RESUME_CONTENT = {
                 "Node",
                 "Electron",
                 "JQuery",
+                textUnitStyle
+            ),
+
+            heading(4, "Python (Data Science)", {margin: "1em 0 0"}),
+            unorderedList(
+                "Scikit-Learn",
+                "StatsModels",
+                "Keras/TensorFlow",
+                "Pyspark",
+                "Matplotlib",
+                "Numpy + Pandas",
+                "Flask",
                 textUnitStyle
             ),
 
@@ -142,13 +105,6 @@ const RESUME_CONTENT = {
                 "HTML5",
                 "CSS3",
                 "Bootstrap",
-                textUnitStyle
-            ),
-            
-            heading(4, "Data Science", {margin: "1em 0 0"}),
-            unorderedList(
-                "Python",
-                "Numpy + Pandas",
                 textUnitStyle
             ),
 
@@ -176,6 +132,41 @@ const RESUME_CONTENT = {
             unorderedList(
                 "MVC",
                 "Rest",
+                textUnitStyle
+            ),
+
+
+            htmlInsert(<hr/>),
+
+            heading(3, "Music & Audio", textUnitStyle),
+            heading(5, "Notation Software", {...textUnitStyle, marginLeft: "1em"}),
+            unorderedList(
+                "Sibelius",
+                "Dorico",                
+                textUnitStyle
+            ),
+            heading(5, "Recording Software", {...textUnitStyle, marginLeft: "1em"}),
+            unorderedList(
+                "Pro Tools",
+                "Logic",                
+                textUnitStyle
+            ),
+            heading(5, "Other", {...textUnitStyle, marginLeft: "1em"}),
+            unorderedList(
+                "Max MSP",                
+                textUnitStyle
+            ),
+                            
+            htmlInsert(<hr/>),
+
+            heading(3, "Soft Skills", textUnitStyle),
+            unorderedList(
+                "Creative problem solver",
+                "Self directed learner",
+                "Well organized",
+                "Leadership & team experience",
+                "Excellent time management",
+                "Self starter",
                 textUnitStyle
             ),
 
@@ -238,11 +229,11 @@ const RESUME_CONTENT = {
             
             htmlInsert(<hr/>),
 
-            heading(3, "Data Science Bootcamp", textUnitStyle),
+            heading(3, "Data Science Fellow", textUnitStyle),
             heading(4, "Flatiron School, Washington D.C.", {...textUnitStyle, fontWeight: 500}),
             paragraph("2019", {margin: '0 0 1em'}),
 
-            heading(3, "Doctorate of Musical Arts - Composition", textUnitStyle),
+            heading(3, "Doctorate of Musical Arts (DMA) - Composition", textUnitStyle),
             heading(4, "University of Maryland, College Park", {...textUnitStyle, fontWeight: 500}),
             paragraph("2015 - 2019", {margin: '0 0 1em'}),
         
