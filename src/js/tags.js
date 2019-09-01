@@ -90,12 +90,12 @@ const codeGist = (content) => {
 // OBJECT TAG RENDERERS
 
 
-const postBox = (title, date, summary, ...content) => {
+const postBox = (title, date, summary, markdown) => {
     return {
         title,
         date,
         summary,
-        tags: content
+        markdown
     }
 }
 

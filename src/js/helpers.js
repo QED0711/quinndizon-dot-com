@@ -1,10 +1,10 @@
 
 const parseTitle = (title) => {
-    return title.replace(/\s/g, "-").toLowerCase();
+    return title.replace(/\s/g, "_").toLowerCase();
 }
 
 const reformatTitle = (title) => {
-    return title.replace(/\-/g, " ").toLowerCase();
+    return title.replace(/\_/g, " ").toLowerCase();
 }
 
 export {
