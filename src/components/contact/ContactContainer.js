@@ -19,6 +19,7 @@ class ContactContainer extends Component {
                         <ul>
                             <em>
                                 <li>Personalized website design, development, & consulting</li>
+                                <li>Data analysis, retrieval, and machine learning model creation</li>
                                 <li>Audio recording, mixing, & mastering</li>
                                 <li>Original compositions</li>
                                 <li>Conducting</li>                            
