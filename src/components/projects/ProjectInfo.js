@@ -17,6 +17,7 @@ import pythonBadge from '../../media/projects/icons/python.svg';
 import sklearnBadge from '../../media/projects/icons/sklearn.svg';
 import flaskBadge from '../../media/projects/icons/flask.svg';
 import netlifyBadge from '../../media/projects/icons/netlify.svg'
+import gcloudBadge from '../../media/projects/icons/gcloud.svg'
 
 const ProjectInfo = ({project}) => {
 
@@ -41,6 +42,7 @@ const ProjectInfo = ({project}) => {
         sklearn: sklearnBadge,
         flask: flaskBadge,
         netlify: netlifyBadge,
+        gcloud: gcloudBadge,
     }
 
     const renderIconDiv = (techBadges) => {

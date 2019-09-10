@@ -99,7 +99,7 @@
         color: var(--clear);
     }
     100%{
-        letter-spacing: 0.5em;
+        letter-spacing: 0.3em;
         color: var(--dark1);
         text-shadow: 1px 1px 5px var(--grey);
     }

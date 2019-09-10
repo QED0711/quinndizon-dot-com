@@ -10,6 +10,9 @@ import {
     htmlInsert
 } from '../js/tags'
 
+import wikiLearnDesktop from '../media/projects/wikiLearn/Desktop.png'
+import wikiLearnTablet from '../media/projects/wikiLearn/Tablet.png'
+import wikiLearnMobile from '../media/projects/wikiLearn/Mobile.png'
 
 import soTagDesktop from '../media/projects/SOTagPredictor/desktop.png'
 import soTagTablet from '../media/projects/SOTagPredictor/tablet.png'
@@ -37,6 +40,31 @@ const PROJECTS_CONTENT = {
     title: "Projects",
 
     projects: [
+        projectInfoBox(
+            "Wiki Learn",
+            [
+                heading(2, "Wiki Learn", {textAlign: 'center'}), 
+                heading(5, "2019", {textAlign: 'center', margin: 0}), 
+                paragraph("Using a custom built recommender system and machine learning models, users can easily parse the vast amounts of instructional data on the web and create interactive curricula."),
+                htmlInsert(<hr/>),
+                heading(3, "Technologies"),
+                unorderedList("Python", "Scikit-Learn", "Flask", "Google Cloud", "React + Netlify"),
+                htmlInsert(<hr/>),
+                heading(3, "Features"),
+                unorderedList(
+                    "Takes any Wikipedia article and finds the most related and relevant topics to that entry point",
+                    "From the list of calculated recommendations, uses a Random Forest ML model to predict whether a topic should be learned before or after the user specified article",
+                    "A back end Flask app is deployed on Google Cloud, and a front end React UI is available so anyone can use the curriculum developer"
+                ),
+            ],
+            "https://github.com/QED0711/wiki_learn",
+            "https://wikilearn.netlify.com/",
+            wikiLearnDesktop,
+            wikiLearnTablet,
+            wikiLearnMobile,
+            null,
+            ['python', 'sklearn', 'flask', 'gcloud', 'react', 'netlify'],
+        ),
 
         projectInfoBox(
             "Stack Overflow Predictor",
