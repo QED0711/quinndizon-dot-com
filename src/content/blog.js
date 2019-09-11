@@ -10,6 +10,7 @@ Make sure to run `node compileMarkdown` if you make any changes to a markdown bl
 
 // Import blog posts here in the format shown below
 const matplotlibSubplotsContent = require('./blogPosts/json/matplotlibSubplots.json').content
+const audioVisualizer = require('./blogPosts/json/audioVisualizer.json').content
 
 const BLOG_CONTENT = {
     title: "Blog",
@@ -21,6 +22,12 @@ const BLOG_CONTENT = {
             "July 8, 2019",
             "A guide and tool for planning your plots",
             matplotlibSubplotsContent
+        ),
+        postBox(
+            "Audio Comparison Toolkit",
+            "July 26, 2019",
+            "A Data Scientist's Apprach ot Visual Audio Comparision",
+            audioVisualizer
         ),
     ]
 }
