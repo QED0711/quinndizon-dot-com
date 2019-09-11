@@ -30,7 +30,7 @@ const RESUME_CONTENT = {
             
             htmlInsert(<hr/>),
 
-            heading(3, "Application Developer, Online Course Designer", textUnitStyle),
+            heading(3, "APPLICATION DEVELOPER, ONLINE COURSE DESIGNER", textUnitStyle),
             heading(5, "January 2019 - Present", textUnitStyle),
             heading(4, "University of Maryland College Park", indentedSubheadingStyle),
             unorderedList(
