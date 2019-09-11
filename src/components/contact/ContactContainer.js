@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import CONTACT_CONTENT from '../../content/contact';
 // COMPONENTS
 import { TitleBox } from '../elements/stateless';
+import SocialIconContainer from '../about/SocialIconContainer';
 class ContactContainer extends Component {
     render(){
         return(
@@ -28,6 +29,7 @@ class ContactContainer extends Component {
 
                         </ul>
                         <p>Think Quinn may be able to help with something not on the list? Send him a message anyway. He is always eager to explore new possibilities.</p>
+                        <SocialIconContainer />
                     </div>
 
                     <div className="contact-form-name">
