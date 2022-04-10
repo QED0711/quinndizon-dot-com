@@ -16,7 +16,7 @@
   "devDependencies": {
     "handlebars": ">=4.3.0",
     "acorn": ">=5.7.4",
-    "minimist": ">=1.2.2"
+    "minimist": ">=1.2.6"
   },
   "scripts": {
     "start": "react-scripts start",
